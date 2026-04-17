@@ -59,17 +59,10 @@ ul { list-style: none; }
   color: var(--off-white);
   transition: color .3s;
 }
-.nav.is-scrolled .nav__logo-sym { color: var(--navy-100); }
-.nav__logo-text { display: flex; flex-direction: column; line-height: 0.95; }
-.nav__logo-text span:first-child {
-  font-family: var(--title); font-size: 18px;
-  letter-spacing: 0.08em; color: var(--off-white);
-  transition: color .3s;
-}
-.nav__logo-text span:last-child {
-  font-family: var(--title); font-size: 8px;
-  letter-spacing: 0.25em; color: var(--sand-100);
-  margin-top: 3px; transition: color .3s;
+.nav.is-scrolled .nav__logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
 }
 .nav.is-scrolled .nav__logo-text span:first-child { color: var(--navy-100); }
 .nav.is-scrolled .nav__logo-text span:last-child { color: var(--gold-100); }
@@ -745,16 +738,7 @@ ul { list-style: none; }
 <!-- NAV -->
 <nav class="nav" id="nav">
   <a href="index.html" class="nav__logo" aria-label="Home & Villas">
-    <svg class="nav__logo-sym" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M 24 3 L 42.5 13.5 L 42.5 34.5 L 24 45 L 5.5 34.5 L 5.5 13.5 Z" stroke-width="1"/>
-      <path d="M 14 24 L 24 15 L 34 24"/>
-      <path d="M 12 30 Q 18 28, 24 30 T 36 30"/>
-      <path d="M 14 36 Q 19 34, 24 36 T 34 36"/>
-    </svg>
-    <span class="nav__logo-text">
-      <span>HOME & VILLAS</span>
-      <span>BY MONTE DOURADO</span>
-    </span>
+    <img src="images/brand/idv-azul.svg" alt="Home & Villas by Monte Dourado" class="nav__logo-img">
   </a>
   <ul class="nav__menu">
     <li><a href="index.html#villas">Villas</a></li>
