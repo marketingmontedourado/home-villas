@@ -1032,6 +1032,24 @@ input { font: inherit; }
 /* =============================================================
    RESPONSIVO
    ============================================================= */
+
+/* HAMBURGER MOBILE */
+.nav__hamburger { display: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--navy-20); align-items: center; justify-content: center; cursor: pointer; background: var(--off-white); transition: all .25s; }
+.nav__hamburger svg { width: 20px; height: 20px; }
+.mobile-menu { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(42,62,91,0.6); backdrop-filter: blur(8px); opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.mobile-menu.is-open { opacity: 1; pointer-events: all; }
+.mobile-menu__panel { position: absolute; right: 0; top: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--off-white); padding: var(--s7) var(--s6); display: flex; flex-direction: column; transform: translateX(100%); transition: transform .35s ease; }
+.mobile-menu.is-open .mobile-menu__panel { transform: translateX(0); }
+.mobile-menu__close { align-self: flex-end; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--navy-20); display: flex; align-items: center; justify-content: center; cursor: pointer; margin-bottom: var(--s6); }
+.mobile-menu__close svg { width: 18px; height: 18px; }
+.mobile-menu__links { display: flex; flex-direction: column; gap: var(--s2); }
+.mobile-menu__links a { font-family: var(--title); font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--navy-100); padding: var(--s4) var(--s3); border-radius: 12px; transition: background .2s; }
+.mobile-menu__links a:hover { background: var(--sand-20); }
+.mobile-menu__cta { margin-top: auto; display: flex; flex-direction: column; gap: var(--s3); padding-top: var(--s6); border-top: 1px solid var(--navy-10); }
+.mobile-menu__cta a { display: flex; align-items: center; justify-content: center; gap: var(--s2); padding: 14px; border-radius: var(--r-pill); font-family: var(--title); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; }
+.mobile-menu__cta .btn-primary { background: var(--navy-100); color: var(--off-white); }
+.mobile-menu__cta .btn-secondary { border: 1px solid var(--navy-20); color: var(--navy-100); }
+
 @media (max-width: 1180px) {
   .layout { grid-template-columns: 1fr; gap: 0; }
   .booking { position: static; margin: var(--s7) 0; }
@@ -1039,6 +1057,9 @@ input { font: inherit; }
   .similar__grid { grid-template-columns: 1fr 1fr; }
   .gal-full__grid { grid-template-columns: repeat(3, 1fr); }
   .nav__menu { display: none; }
+  .nav__lang { display: none; }
+  .nav__hamburger { display: flex; }
+  .mobile-menu { display: block; }
 }
 @media (max-width: 900px) {
   .nav, .page, .gal-full, .similar, .footer { padding-left: var(--s4); padding-right: var(--s4); }
@@ -1079,6 +1100,26 @@ input { font: inherit; }
     Conta
   </a>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__panel">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="mobile-menu__links">
+      <a href="index.html#villas">Villas</a>
+      <a href="index.html#destinos">Destinos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="mobile-menu__cta">
+      <a href="contato.html" class="btn-primary">Reservar</a>
+      <a href="https://wa.me/5585981488365" target="_blank" class="btn-secondary">WhatsApp</a>
+    </div>
+  </div>
+</div>
 
 <!-- ============================================================
      HEADER + HERO GALERIA
