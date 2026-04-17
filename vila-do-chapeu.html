@@ -157,26 +157,27 @@ ul { list-style: none; }
 
 /* SECTION BASE */
 .section {
-  padding: var(--s10) var(--s7);
+  padding: 180px var(--s7) 160px;
   max-width: 1440px; margin: 0 auto;
 }
 .section__eyebrow {
   display: inline-flex; align-items: center; gap: var(--s3);
   font-family: var(--title); font-size: 10.5px;
   letter-spacing: 0.24em; color: var(--gold-100);
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s5);
 }
 .section__eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--gold-100); }
 .section__title {
   font-family: var(--title); text-transform: uppercase;
   font-size: clamp(40px, 5.2vw, 84px); line-height: 0.92;
   letter-spacing: 0.005em; color: var(--navy-100); font-weight: 400;
+  margin-bottom: var(--s8);
 }
 .section__title em { font-style: normal; color: var(--gold-100); }
 
 /* MANIFESTO */
 .manifesto {
-  padding: var(--s10) var(--s7);
+  padding: 180px var(--s7) 160px;
   max-width: 1440px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1.2fr;
   gap: var(--s9); align-items: start;
@@ -288,7 +289,7 @@ ul { list-style: none; }
 /* MAPA DO EMPREENDIMENTO */
 .master-plan {
   background: var(--navy-100); color: var(--off-white);
-  padding: var(--s10) var(--s7);
+  padding: 180px var(--s7) 160px;
   position: relative; overflow: hidden;
 }
 .master-plan__pattern {
@@ -299,7 +300,7 @@ ul { list-style: none; }
 }
 .master-plan__head {
   display: flex; align-items: flex-end; justify-content: space-between;
-  gap: var(--s6); margin-bottom: var(--s7);
+  gap: var(--s6); margin-bottom: var(--s9);
 }
 .master-plan__head .section__eyebrow { color: var(--sand-100); }
 .master-plan__head .section__eyebrow::before { background: var(--sand-100); }
@@ -503,7 +504,7 @@ ul { list-style: none; }
 
 /* CASAS DISPONÍVEIS — grid */
 .villas-sec {
-  padding: var(--s10) var(--s7);
+  padding: 180px var(--s7) 160px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -597,7 +598,7 @@ ul { list-style: none; }
 
 /* LOCALIZAÇÃO */
 .loc {
-  padding: 160px var(--s7) 140px;
+  padding: 180px var(--s7) 160px;
   background: var(--sand-20);
 }
 .loc__inner { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); align-items: center; }
@@ -632,7 +633,7 @@ ul { list-style: none; }
 
 /* CTA */
 .cta {
-  padding: 160px var(--s7) 140px;
+  padding: 180px var(--s7) 160px;
   background: var(--navy-100);
   color: var(--off-white);
   position: relative; overflow: hidden;
@@ -735,8 +736,8 @@ ul { list-style: none; }
     <img src="images/brand/idv-azul.svg" alt="Home & Villas by Monte Dourado" class="nav__logo-img">
   </a>
   <ul class="nav__menu">
-    <li><a href="index.html#villas">Villas</a></li>
-    <li><a href="index.html#destinos">Destinos</a></li>
+    <li><a href="home-villas.html#villas">Villas</a></li>
+    <li><a href="home-villas.html#destinos">Destinos</a></li>
     <li><a href="#">Experiências</a></li>
     <li><a href="#">Sobre</a></li>
     <li><a href="#">Contato</a></li>
@@ -757,7 +758,7 @@ ul { list-style: none; }
       <nav class="breadcrumb">
         <a href="index.html">Home</a>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 6 6 6-6 6"/></svg>
-        <a href="index.html#villas">Villas</a>
+        <a href="home-villas.html#villas">Villas</a>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 6 6 6-6 6"/></svg>
         <strong>VILA DO CHAPÉU</strong>
       </nav>
