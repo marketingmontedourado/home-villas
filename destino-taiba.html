@@ -267,6 +267,14 @@ ul { list-style: none; }
 .dest-stat { text-align: center; padding: var(--s6); }
 .dest-stat__val { font-family: var(--title); font-size: clamp(32px, 4vw, 56px); color: var(--navy-100); line-height: 1; margin-bottom: var(--s2); }
 .dest-stat__lbl { font-family: var(--title); font-size: 10px; letter-spacing: 0.2em; color: var(--gold-100); text-transform: uppercase; }
+
+@media (max-width: 1180px) {
+  .nav__login { display: none; }
+}
+@media (max-width: 780px) {
+  .nav__logo-img { height: 40px; }
+}
+
 @media (max-width: 768px) { .dest-stats { grid-template-columns: repeat(2, 1fr); } .exp-grid, .values-grid, .team-grid { grid-template-columns: 1fr; } }
 
 

@@ -718,6 +718,14 @@ ul { list-style: none; }
 .mobile-menu__cta .btn-primary { background: var(--navy-100); color: var(--off-white); }
 .mobile-menu__cta .btn-secondary { border: 1px solid var(--navy-20); color: var(--navy-100); }
 
+
+@media (max-width: 1180px) {
+  .nav__login { display: none; }
+}
+@media (max-width: 780px) {
+  .nav__logo-img { height: 40px; }
+}
+
 @media (max-width: 1180px) {
   .nav__menu { display: none; }
   .nav__lang { display: none; }
@@ -1344,6 +1352,17 @@ ul { list-style: none; }
   });
 </script>
 
-<script src="i18n.js"></script>
+<script src="i18n.js">
+// Mobile menu
+const hbg=document.getElementById('hamburger');
+const mm=document.getElementById('mobileMenu');
+const mc=document.getElementById('menuClose');
+if(hbg&&mm&&mc){
+  hbg.addEventListener('click',()=>mm.classList.add('is-open'));
+  mc.addEventListener('click',()=>mm.classList.remove('is-open'));
+  mm.addEventListener('click',(e)=>{if(e.target===mm)mm.classList.remove('is-open')});
+  mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('is-open')));
+}
+</script>
 </body>
 </html>
