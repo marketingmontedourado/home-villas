@@ -733,6 +733,12 @@ ul { list-style: none; }
   .loc__inner { grid-template-columns: 1fr; gap: var(--s7); }
 }
 @media (max-width: 780px) {
+  .amenities-list { grid-template-columns: 1fr 1fr !important; }
+}
+@media (max-width: 480px) {
+  .amenities-list { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 780px) {
   .nav, .section, .manifesto, .villas-sec, .loc, .cta, .footer { padding-left: var(--s5); padding-right: var(--s5); }
   .amens-sec, .master-plan { padding-left: var(--s5); padding-right: var(--s5); }
   .hero__inner { padding: 0 var(--s5) var(--s7); }
@@ -960,7 +966,7 @@ ul { list-style: none; }
     </div>
 
     <!-- Lista completa de amenidades -->
-    <div style="max-width:1440px; margin:var(--s8) auto 0; display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--s4) var(--s7);">
+    <div class="amenities-list" style="max-width:1440px; margin:var(--s8) auto 0; display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--s4) var(--s7);">
       <div style="display:flex; align-items:center; gap:var(--s3); padding:var(--s3) 0; border-bottom:1px solid var(--gold-40);">
         <span style="font-family:var(--title); font-size:12px; letter-spacing:0.06em; color:var(--navy-100); text-transform:uppercase;">Praça central</span>
       </div>
