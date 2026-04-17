@@ -226,7 +226,7 @@ ul { list-style: none; }
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  background: var(--off-white);
+  color: var(--off-white);
 }
 .hero__bg {
   position: absolute;
@@ -238,14 +238,14 @@ ul { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.85) saturate(1.05);
+  filter: brightness(0.75) saturate(1.05);
 }
 .hero__bg::after {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(42,62,91,0.35) 0%, rgba(42,62,91,0.0) 35%, rgba(42,62,91,0.0) 55%, rgba(249,249,240,0.92) 100%);
+    linear-gradient(180deg, rgba(42,62,91,0.55) 0%, rgba(42,62,91,0.1) 35%, rgba(42,62,91,0) 60%, rgba(42,62,91,0.8) 100%);
 }
 .hero__inner {
   position: relative;
@@ -260,19 +260,19 @@ ul { list-style: none; }
   align-items: center;
   gap: var(--s3);
   padding: 10px 18px;
-  background: rgba(249,249,240,0.85);
+  background: rgba(255,255,255,0.15);
   backdrop-filter: blur(8px);
   border-radius: var(--r-pill);
   font-family: var(--title);
   font-size: 10.5px;
   letter-spacing: 0.22em;
-  color: var(--navy-100);
+  color: var(--off-white);
   margin-bottom: var(--s6);
 }
 .hero__eyebrow::before {
   content: "";
   width: 6px; height: 6px;
-  background: var(--gold-100);
+  background: var(--sand-100);
   border-radius: 50%;
 }
 .hero__title {
@@ -281,22 +281,21 @@ ul { list-style: none; }
   font-size: clamp(54px, 9.5vw, 168px);
   line-height: 0.88;
   letter-spacing: 0.005em;
-  color: var(--navy-100);
+  color: var(--off-white);
   margin-bottom: var(--s5);
   max-width: 1200px;
   font-weight: 400;
 }
 .hero__title em {
   font-style: normal;
-  color: var(--gold-100);
+  color: var(--sand-100);
   display: block;
 }
 .hero__sub {
   max-width: 540px;
   font-size: 17px;
   line-height: 1.55;
-  color: rgba(255,255,255,0.9);
-  color: var(--navy-80);
+  color: rgba(255,255,255,0.85);
   margin-bottom: var(--s7);
   font-weight: 300;
 }
@@ -386,7 +385,7 @@ ul { list-style: none; }
 .hero__scroll-line {
   width: 1px;
   height: 48px;
-  background: var(--navy-40);
+  background: rgba(255,255,255,0.3);
   position: relative;
   overflow: hidden;
 }
@@ -397,7 +396,7 @@ ul { list-style: none; }
   left: 0;
   width: 100%;
   height: 40%;
-  background: var(--navy-100);
+  background: var(--off-white);
   animation: scrollHint 2.2s ease-in-out infinite;
 }
 @keyframes scrollHint {
@@ -408,7 +407,7 @@ ul { list-style: none; }
   font-family: var(--title);
   font-size: 9.5px;
   letter-spacing: 0.25em;
-  color: var(--navy-100);
+  color: var(--off-white);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
