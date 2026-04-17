@@ -155,10 +155,33 @@ ul { list-style: none; }
 @media (max-width: 768px) { .exp-grid, .values-grid, .team-grid { grid-template-columns: 1fr; } }
 
 
+
+/* FOOTER */
+.footer { background: var(--off-white); padding: var(--s9) var(--s7) var(--s5); }
+.footer__inner {
+  max-width: 1440px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--s7); padding-bottom: var(--s7);
+  border-bottom: 1px solid var(--navy-10);
+}
+.footer__logo-img { height: 64px; width: auto; display: block; opacity: .9; margin-bottom: var(--s4); }
+.footer__desc { font-family: var(--body); font-weight: 300; font-size: 14px; line-height: 1.6; color: var(--navy-60); max-width: 340px; margin-bottom: var(--s5); }
+.footer__social { display: flex; gap: var(--s4); align-items: center; margin-top: var(--s4); }
+.footer__social a { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--navy-20); display: inline-flex; align-items: center; justify-content: center; color: var(--navy-100); transition: all .25s; }
+.footer__social a:hover { background: var(--navy-100); color: var(--off-white); border-color: var(--navy-100); }
+.footer__social svg { width: 16px; height: 16px; }
+.footer__col-title { font-family: var(--title); font-size: 11px; letter-spacing: 0.22em; color: var(--navy-100); margin-bottom: var(--s4); text-transform: uppercase; }
+.footer__col ul { display: flex; flex-direction: column; gap: var(--s3); }
+.footer__col a { font-family: var(--body); font-weight: 300; font-size: 14px; color: var(--navy-80); transition: color .2s; }
+.footer__col a:hover { color: var(--gold-100); }
+.footer__bottom { max-width: 1440px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding-top: var(--s5); gap: var(--s5); flex-wrap: wrap; }
+.footer__copy { font-family: var(--title); font-size: 10px; letter-spacing: 0.2em; color: var(--navy-60); }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .nav__menu { display: none; }
   .page-hero { min-height: 50vh; padding-top: 100px; }
+  .footer__inner { grid-template-columns: 1fr; }
   .page-hero__title { font-size: clamp(36px, 10vw, 72px); }
   .page-section { padding: 80px var(--s5) 60px; }
   .page-grid { grid-template-columns: 1fr; }
