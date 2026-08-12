@@ -135,6 +135,8 @@
     'A Casa':{en:'The House',es:'La Casa',fr:'La Maison'},
     'A CASA':{en:'THE HOUSE',es:'LA CASA',fr:'LA MAISON'},
     'Conhecer a Casa Zamá':{en:'Discover Casa Zamá',es:'Conocer la Casa Zamá',fr:'Découvrir la Casa Zamá'},
+    '5 suítes':{en:'5 suites',es:'5 suites',fr:'5 suites'},
+    '10 hóspedes':{en:'10 guests',es:'10 huéspedes',fr:'10 hôtes'},
     'Falar com o concierge':{en:'Talk to the concierge',es:'Hablar con el concierge',fr:'Parler au concierge'},
     'A casa da':{en:'The house by',es:'La casa de',fr:'La maison de'},
     'Reservas pelo concierge':{en:'Bookings via the concierge',es:'Reservas con el concierge',fr:'Réservations via le concierge'},

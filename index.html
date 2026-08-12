@@ -1384,6 +1384,32 @@ ul { list-style: none; }
 .hero__actions .btn-secondary { border: 1px solid rgba(249,249,240,.55); color: var(--off-white); }
 .hero__actions .btn-secondary:hover { border-color: var(--off-white); background: rgba(249,249,240,.12); }
 
+/* Card da casa (home): horizontal, ancorado na largura da seção */
+.casa-card {
+  display: grid; grid-template-columns: 1.25fr 1fr;
+  border-radius: var(--r-card); overflow: hidden;
+  border: 1px solid var(--navy-10);
+  background: var(--sand-10);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.casa-card:hover { box-shadow: 0 24px 60px -30px rgba(42,62,91,.35); transform: translateY(-3px); }
+.casa-card__media { position: relative; min-height: 340px; max-height: 62vh; overflow: hidden; }
+.casa-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.casa-card:hover .casa-card__media img { transform: scale(1.04); }
+.casa-card__body { padding: var(--s7) var(--s7); display: flex; flex-direction: column; justify-content: center; gap: var(--s4); }
+.casa-card__loc { font-family: var(--title); font-size: 10.5px; letter-spacing: .22em; color: var(--gold-100); text-transform: uppercase; }
+.casa-card__logo { height: clamp(34px, 3.4vw, 46px); width: auto; align-self: flex-start; }
+.casa-card__desc { font-size: 15px; color: var(--navy-80); line-height: 1.6; max-width: 46ch; }
+.casa-card__meta { font-size: 12.5px; letter-spacing: .04em; color: var(--navy-60); display: flex; gap: 10px; flex-wrap: wrap; }
+.casa-card__cta { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--s2); font-family: var(--title); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--navy-100); }
+.casa-card__cta svg { width: 14px; height: 14px; transition: transform .25s; }
+.casa-card:hover .casa-card__cta svg { transform: translate(2px, -2px); }
+@media (max-width: 860px) {
+  .casa-card { grid-template-columns: 1fr; }
+  .casa-card__media { min-height: 0; max-height: none; aspect-ratio: 16/10; }
+  .casa-card__body { padding: var(--s6) var(--s5); }
+}
+
 
 @media (max-width: 1180px) {
   .nav__login { display: none; }
@@ -1531,34 +1557,28 @@ ul { list-style: none; }
     </div>
   </div>
 
-  <div class="empr-grid" style="grid-template-columns:minmax(0,760px); justify-content:center;">
-
-    <!-- Casa Zamá -->
-    <a href="casa-zama.html" class="empr reveal" style="--i:0">
-      <div class="empr__media">
-        <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá - fachada principal" />
-        <div class="empr__badge">TAÍBA</div>
+  <a href="casa-zama.html" class="casa-card reveal">
+    <div class="casa-card__media">
+      <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá - fachada principal" />
+      <div class="empr__badge">TAÍBA</div>
+    </div>
+    <div class="casa-card__body">
+      <div class="casa-card__loc">TAÍBA · VILA DO CHAPÉU</div>
+      <img class="casa-card__logo" src="images/casa-zama/zama-horizontal-marrom.png" alt="Casa Zamá" />
+      <p class="casa-card__desc">Piscina de borda contínua, área gourmet coberta e suítes abertas ao vento do Ceará.</p>
+      <div class="casa-card__meta">
+        <span>5 suítes</span>
+        <span>·</span>
+        <span>10 hóspedes</span>
+        <span>·</span>
+        <span>Reservas pelo concierge</span>
       </div>
-      <div class="empr__body">
-        <div class="empr__meta">
-          <span class="empr__loc">TAÍBA · VILA DO CHAPÉU</span>
-          <span class="empr__arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
-          </span>
-        </div>
-        <h3 class="empr__name">Casa Zamá</h3>
-        <p class="empr__desc">Piscina de borda contínua, área gourmet coberta e suítes abertas ao vento do Ceará.</p>
-        <div class="empr__stats">
-          <span>Vila do Chapéu</span>
-          <span>·</span>
-          <span>Taíba</span>
-          <span>·</span>
-          <span>Reservas pelo concierge</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
+      <span class="casa-card__cta">
+        Conhecer a casa
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </span>
+    </div>
+  </a>
 </section>
 
 <!-- ============================================================
@@ -1766,7 +1786,7 @@ ul { list-style: none; }
   <div class="footer__inner">
     <div class="footer__brand">
       <div class="footer__brand-wordmark">
-        <img src="images/brand/simbolo-bege.svg" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
+        <img src="images/brand/idv-azul.svg" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
       </div>
       <p class="footer__brand-text">
         Hospedagem por temporada no litoral cearense, por Monte Dourado.

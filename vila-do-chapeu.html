@@ -718,6 +718,31 @@ ul { list-style: none; }
 .mobile-menu__cta .btn-primary { background: var(--navy-100); color: var(--off-white); }
 .mobile-menu__cta .btn-secondary { border: 1px solid var(--navy-20); color: var(--navy-100); }
 
+/* Card horizontal da casa (mesmo padrão da home) */
+.casa-card {
+  display: grid; grid-template-columns: 1.25fr 1fr;
+  border-radius: var(--r-card); overflow: hidden;
+  border: 1px solid var(--navy-10);
+  background: var(--sand-10);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.casa-card:hover { box-shadow: 0 24px 60px -30px rgba(42,62,91,.35); transform: translateY(-3px); }
+.casa-card__media { position: relative; min-height: 340px; max-height: 62vh; overflow: hidden; }
+.casa-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.casa-card:hover .casa-card__media img { transform: scale(1.04); }
+.casa-card__body { padding: var(--s7) var(--s7); display: flex; flex-direction: column; justify-content: center; gap: var(--s4); }
+.casa-card__loc { font-family: var(--title); font-size: 10.5px; letter-spacing: .22em; color: var(--gold-100); text-transform: uppercase; }
+.casa-card__desc { font-size: 15px; color: var(--navy-80); line-height: 1.6; max-width: 46ch; }
+.casa-card__meta { font-size: 12.5px; letter-spacing: .04em; color: var(--navy-60); display: flex; gap: 10px; flex-wrap: wrap; }
+.casa-card__cta { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--s2); font-family: var(--title); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--navy-100); }
+.casa-card__cta svg { width: 14px; height: 14px; transition: transform .25s; }
+.casa-card:hover .casa-card__cta svg { transform: translate(2px, -2px); }
+@media (max-width: 860px) {
+  .casa-card { grid-template-columns: 1fr; }
+  .casa-card__media { min-height: 0; max-height: none; aspect-ratio: 16/10; }
+  .casa-card__body { padding: var(--s6) var(--s5); }
+}
+
 
 @media (max-width: 1180px) {
   .nav__login { display: none; }
@@ -974,25 +999,26 @@ ul { list-style: none; }
     </a>
   </header>
 
-  <div class="villas-grid" style="grid-template-columns:minmax(0,560px);">
-
-    <a href="casa-zama.html" class="v-card reveal" style="transition-delay: 0ms">
-      <div class="v-card__media">
-        <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá" />
+  <a href="casa-zama.html" class="casa-card reveal">
+    <div class="casa-card__media">
+      <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá - fachada principal" />
+    </div>
+    <div class="casa-card__body">
+      <div class="casa-card__loc">VILA DO CHAPÉU · TAÍBA</div>
+      <p class="casa-card__desc">A casa da Home &amp; Villas dentro do condomínio: piscina de borda contínua, área gourmet coberta e suítes abertas ao vento do Ceará.</p>
+      <div class="casa-card__meta">
+        <span>5 suítes</span>
+        <span>·</span>
+        <span>10 hóspedes</span>
+        <span>·</span>
+        <span>Reservas pelo concierge</span>
       </div>
-      <div>
-        <div class="v-card__loc">VILA DO CHAPÉU · TAÍBA</div>
-        <h3 class="v-card__name">Casa Zamá</h3>
-        <div class="v-card__features">
-          <span>5 suítes</span><span>10 hóspedes</span><span>Piscina</span>
-        </div>
-        <div class="v-card__price">
-          <span class="v-card__cta">VER A CASA →</span>
-        </div>
-      </div>
-    </a>
-
-  </div>
+      <span class="casa-card__cta">
+        Ver a casa
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </span>
+    </div>
+  </a>
 </section>
 
 <!-- LOCALIZAÇÃO -->
