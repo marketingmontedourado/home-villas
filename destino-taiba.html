@@ -61,13 +61,14 @@ ul { list-style: none; }
   transition: color .3s;
 }
 .nav.is-scrolled .nav__logo-img {
-  height: 60px;
+  height: 48px;
   width: auto;
   display: block;
 }
 .nav.is-scrolled .nav__logo-text span:first-child { color: var(--navy-100); }
 .nav.is-scrolled .nav__logo-text span:last-child { color: var(--gold-100); }
-.nav__logo-img { height: 60px; width: auto; display: block; }
+.nav__actions { display: flex; align-items: center; gap: var(--s4); }
+.nav__logo-img { height: 48px; width: auto; display: block; }
 .nav__logo-img--dark { display: none; }
 .nav.is-scrolled .nav__logo-img--light { display: none; }
 .nav.is-scrolled .nav__logo-img--dark { display: block; }
@@ -339,8 +340,8 @@ ul { list-style: none; }
 
 <nav class="nav" id="nav">
   <a href="index.html" class="nav__logo" aria-label="Home & Villas">
-    <img src="images/brand/idv-branco.svg" alt="Home & Villas by Monte Dourado" class="nav__logo-img nav__logo-img--light">
-    <img src="images/brand/idv-azul.svg" alt="" class="nav__logo-img nav__logo-img--dark">
+    <img src="images/brand/hv-horizontal-completa-areia.png" alt="Home & Villas by Monte Dourado" class="nav__logo-img nav__logo-img--light">
+    <img src="images/brand/hv-horizontal-azul.png" alt="" class="nav__logo-img nav__logo-img--dark">
   </a>
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
@@ -470,7 +471,7 @@ ul { list-style: none; }
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__brand">
-      <img src="images/brand/idv-azul.svg" alt="Home & Villas" class="footer__logo-img">
+      <img src="images/brand/hv-horizontal-azul.png" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
       <p class="footer__desc">Hospedagem por temporada no litoral cearense, por Monte Dourado. Arquitetura, natureza e curadoria em cada villa.</p>
       <div class="footer__social">
         <a href="https://www.instagram.com/monte.dourado" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
