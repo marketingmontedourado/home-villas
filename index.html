@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Home & Villas · by Monte Dourado</title>
-<meta name="description" content="Villas curadas no litoral cearense. Refúgios à beira-mar em Jericoacoara, Preá, Cumbuco e Canoa Quebrada." />
+<meta name="description" content="Hospedagem por temporada na Taíba, litoral do Ceará. A Casa Zamá, no Vila do Chapéu, com gestão e concierge Home & Villas by Monte Dourado." />
 <link rel="icon" href="images/brand/simbolo-azul.svg" />
 
 <link rel="stylesheet" href="https://use.typekit.net/gmt8jav.css">
@@ -1394,6 +1394,14 @@ ul { list-style: none; }
 .mobile-menu__cta .btn-primary { background: var(--navy-100); color: var(--off-white); }
 .mobile-menu__cta .btn-secondary { border: 1px solid var(--navy-20); color: var(--navy-100); }
 
+/* CTAs do hero */
+.hero__actions .btn-primary,
+.hero__actions .btn-secondary { display: inline-flex; align-items: center; justify-content: center; padding: 15px 28px; border-radius: var(--r-pill); font-family: var(--title); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; transition: all .25s; }
+.hero__actions .btn-primary { background: var(--off-white); color: var(--navy-100); }
+.hero__actions .btn-primary:hover { background: var(--sand-100); }
+.hero__actions .btn-secondary { border: 1px solid rgba(249,249,240,.55); color: var(--off-white); }
+.hero__actions .btn-secondary:hover { border-color: var(--off-white); background: rgba(249,249,240,.12); }
+
 
 @media (max-width: 1180px) {
   .nav__login { display: none; }
@@ -1453,8 +1461,8 @@ ul { list-style: none; }
   </a>
 
   <ul class="nav__menu">
-    <li><a href="#villas">Villas</a></li>
-    <li><a href="#destinos">Destinos</a></li>
+    <li><a href="#villas">A Casa</a></li>
+    <li><a href="#destinos">Taíba</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#exp">Experiências</a></li>
     <li><a href="#contato">Contato</a></li>
@@ -1482,8 +1490,8 @@ ul { list-style: none; }
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
     <div class="mobile-menu__links">
-      <a href="index.html#villas">Villas</a>
-      <a href="index.html#destinos">Destinos</a>
+      <a href="casa-zama.html">A Casa</a>
+      <a href="destino-taiba.html">Taíba</a>
       <a href="sobre.html">Sobre</a>
       <a href="experiencias.html">Experiências</a>
       <a href="contato.html">Contato</a>
@@ -1504,38 +1512,20 @@ ul { list-style: none; }
   </div>
 
   <div class="hero__inner">
-    <span class="hero__eyebrow reveal" style="--i:0">LITORAL&nbsp;&nbsp;·&nbsp;&nbsp;CEARÁ&nbsp;&nbsp;·&nbsp;&nbsp;2026</span>
+    <span class="hero__eyebrow reveal" style="--i:0">TAÍBA · CEARÁ · BRASIL</span>
     <h1 class="hero__title reveal" style="--i:1">
       Um refúgio<br/>
       <em>à sua espera.</em>
     </h1>
     <p class="hero__sub reveal" style="--i:2">
-      Villas curadas no litoral cearense. Arquitetura integrada à natureza,
+      Hospedagem por temporada na Taíba, litoral do Ceará. Arquitetura integrada à natureza,
       concierge dedicado e a calma de quem conhece cada vento desta costa.
     </p>
 
-    <form class="search reveal" style="--i:3" onsubmit="event.preventDefault();">
-      <div class="search__field">
-        <span class="search__label">Destino</span>
-        <span class="search__value">Para onde?</span>
-      </div>
-      <div class="search__field">
-        <span class="search__label">Check-in</span>
-        <span class="search__value">Adicionar datas</span>
-      </div>
-      <div class="search__field">
-        <span class="search__label">Check-out</span>
-        <span class="search__value">Adicionar datas</span>
-      </div>
-      <div class="search__field">
-        <span class="search__label">Hóspedes</span>
-        <span class="search__value">Quantos?</span>
-      </div>
-      <button type="submit" class="search__btn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        Buscar
-      </button>
-    </form>
+    <div class="hero__actions reveal" style="--i:3; display:flex; gap:14px; flex-wrap:wrap;">
+      <a href="casa-zama.html" class="btn-primary">Conhecer a Casa Zamá</a>
+      <a href="contato.html" class="btn-secondary">Falar com o concierge</a>
+    </div>
   </div>
 
   <div class="hero__scroll">
@@ -1545,139 +1535,43 @@ ul { list-style: none; }
 </header>
 
 <!-- ============================================================
-     CATEGORIAS
-     ============================================================ -->
-<section class="cats">
-  <div class="cats__inner">
-    <span class="cats__label">Destinos</span>
-
-    <div class="cats__scroll" id="catsScroll">
-      <button class="cat is-active">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        Todos
-      </button>
-      <button class="cat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Taíba
-      </button>
-      <button class="cat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        Ilha do Guajiru
-      </button>
-      <span class="cats__divider"></span>
-      <button class="cat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V8l9-5 9 5v13M9 21V12h6v9"/></svg>
-        Vila do Chapéu
-      </button>
-      <button class="cat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V8l9-5 9 5v13M9 21V12h6v9"/></svg>
-        Vila do Morro
-      </button>
-      <button class="cat">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V8l9-5 9 5v13M9 21V12h6v9"/></svg>
-        Vila da Ilha
-      </button>
-    </div>
-
-    <div class="cats__filters">
-      <button class="icon-btn" aria-label="Filtros">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
-      </button>
-      <button class="icon-btn" aria-label="Mapa">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3 3 5v16l6-2 6 2 6-2V3l-6 2-6-2z M9 3v16M15 5v16"/></svg>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     VILLAS (Vila do Chapéu, Vila do Morro, Vila da Ilha)
+     A CASA (Casa Zamá)
      ============================================================ -->
 <section class="section" id="villas">
   <div class="section__head">
     <div class="section__head-l">
-      <div class="section__eyebrow reveal">VILLAS</div>
-      <h2 class="section__title reveal">Três vilas<br/><em>para viver.</em></h2>
+      <div class="section__eyebrow reveal">A CASA</div>
+      <h2 class="section__title reveal">A casa da<br/><em>Home &amp; Villas.</em></h2>
       <p class="section__sub reveal">
-        Condomínios planejados pela Monte Dourado no litoral cearense.
-        Infraestrutura, segurança e uma casa sua à beira do vento.
+        A Casa Zamá fica no Vila do Chapéu, condomínio da Monte Dourado na Taíba.
+        Gestão completa da estadia, concierge dedicado e o mar a poucos minutos.
       </p>
     </div>
   </div>
 
-  <div class="empr-grid">
+  <div class="empr-grid" style="grid-template-columns:minmax(0,760px); justify-content:center;">
 
-    <!-- Vila do Chapéu -->
-    <a href="vila-do-chapeu.html" class="empr reveal" style="--i:0">
+    <!-- Casa Zamá -->
+    <a href="casa-zama.html" class="empr reveal" style="--i:0">
       <div class="empr__media">
-        <img src="images/vila-chapeu/entrada.jpg" alt="Vila do Chapéu - entrada" />
+        <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá - fachada principal" />
         <div class="empr__badge">TAÍBA</div>
       </div>
       <div class="empr__body">
         <div class="empr__meta">
-          <span class="empr__loc">TAÍBA · MORRO DO CHAPÉU</span>
+          <span class="empr__loc">TAÍBA · VILA DO CHAPÉU</span>
           <span class="empr__arrow">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
           </span>
         </div>
-        <h3 class="empr__name">Vila do Chapéu</h3>
-        <p class="empr__desc">Resort de natureza e lazer. Skatepark, academia ao ar livre, lagoas e quadras.</p>
+        <h3 class="empr__name">Casa Zamá</h3>
+        <p class="empr__desc">Piscina de borda contínua, área gourmet coberta e suítes abertas ao vento do Ceará.</p>
         <div class="empr__stats">
-          <span><strong>12</strong> homes</span>
+          <span>Vila do Chapéu</span>
           <span>·</span>
-          <span><strong>8</strong> disponíveis</span>
+          <span>Taíba</span>
           <span>·</span>
-          <span>a partir de <strong>R$ 2.480</strong>/noite</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Vila do Morro -->
-    <a href="vila-do-morro.html" class="empr reveal" style="--i:1">
-      <div class="empr__media">
-        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80&auto=format&fit=crop" alt="Vila do Morro" />
-        <div class="empr__badge">TAÍBA</div>
-      </div>
-      <div class="empr__body">
-        <div class="empr__meta">
-          <span class="empr__loc">TAÍBA · MORRO DAS DUNAS</span>
-          <span class="empr__arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
-          </span>
-        </div>
-        <h3 class="empr__name">Vila do Morro</h3>
-        <p class="empr__desc">Em cima da duna, com vista aberta para o mar. Casas altas, vento cruzado.</p>
-        <div class="empr__stats">
-          <span><strong>8</strong> homes</span>
-          <span>·</span>
-          <span><strong>5</strong> disponíveis</span>
-          <span>·</span>
-          <span>a partir de <strong>R$ 3.180</strong>/noite</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Vila da Ilha -->
-    <a href="vila-da-ilha.html" class="empr reveal" style="--i:2">
-      <div class="empr__media">
-        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80&auto=format&fit=crop" alt="Vila da Ilha" />
-        <div class="empr__badge">ILHA DO GUAJIRU</div>
-      </div>
-      <div class="empr__body">
-        <div class="empr__meta">
-          <span class="empr__loc">ITAREMA · ILHA DO GUAJIRU</span>
-          <span class="empr__arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
-          </span>
-        </div>
-        <h3 class="empr__name">Vila da Ilha</h3>
-        <p class="empr__desc">Frente à piscina natural. Kite e wing a 2 minutos da villa. A casa do vento.</p>
-        <div class="empr__stats">
-          <span><strong>6</strong> homes</span>
-          <span>·</span>
-          <span><strong>4</strong> disponíveis</span>
-          <span>·</span>
-          <span>a partir de <strong>R$ 2.190</strong>/noite</span>
+          <span>Reservas pelo concierge</span>
         </div>
       </div>
     </a>
@@ -1708,16 +1602,16 @@ ul { list-style: none; }
   <div class="destinos__inner">
     <div class="destinos__head">
       <div>
-        <div class="section__eyebrow">EXPLORE O LITORAL</div>
+        <div class="section__eyebrow">O DESTINO</div>
         <h2 class="destinos__title">
-          Dois refúgios<br/><em>no vento do Ceará.</em>
+          A Taíba,<br/><em>no vento do Ceará.</em>
         </h2>
       </div>
     </div>
 
-    <div class="destinos__grid">
-      <a href="#" class="dest reveal" style="--i:0">
-        <img src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=1600&q=80&auto=format&fit=crop" alt="Taíba" />
+    <div class="destinos__grid" style="grid-template-columns:1fr;">
+      <a href="destino-taiba.html" class="dest reveal" style="--i:0">
+        <img src="images/taiba/sunset-eolicas.jpg" alt="Pôr do sol na Taíba com eólicas" />
         <button class="dest__cta" aria-label="Explorar Taíba">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </button>
@@ -1730,8 +1624,8 @@ ul { list-style: none; }
           </p>
           <div class="dest__meta">
             <div class="dest__meta-item">
-              <span class="dest__meta-lbl">HOMES</span>
-              <span class="dest__meta-val">12 disponíveis</span>
+              <span class="dest__meta-lbl">A CASA</span>
+              <span class="dest__meta-val">Casa Zamá</span>
             </div>
             <div class="dest__meta-item">
               <span class="dest__meta-lbl">DE FORTALEZA</span>
@@ -1739,36 +1633,7 @@ ul { list-style: none; }
             </div>
             <div class="dest__meta-item">
               <span class="dest__meta-lbl">MELHOR ÉPOCA</span>
-              <span class="dest__meta-val">Jul — Fev</span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <a href="#" class="dest reveal" style="--i:1">
-        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1600&q=80&auto=format&fit=crop" alt="Ilha do Guajiru" />
-        <button class="dest__cta" aria-label="Explorar Ilha do Guajiru">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
-        </button>
-        <div class="dest__body">
-          <div class="dest__eyebrow">ITAREMA</div>
-          <h3 class="dest__name">Ilha do<br/>Guajiru</h3>
-          <p class="dest__text">
-            Piscina natural de águas rasas, vento constante e uma das melhores
-            condições de kite e wing do mundo. Vila preservada, horizonte limpo.
-          </p>
-          <div class="dest__meta">
-            <div class="dest__meta-item">
-              <span class="dest__meta-lbl">HOMES</span>
-              <span class="dest__meta-val">8 disponíveis</span>
-            </div>
-            <div class="dest__meta-item">
-              <span class="dest__meta-lbl">DE FORTALEZA</span>
-              <span class="dest__meta-val">3h30 de carro</span>
-            </div>
-            <div class="dest__meta-item">
-              <span class="dest__meta-lbl">MELHOR ÉPOCA</span>
-              <span class="dest__meta-val">Ago — Jan</span>
+              <span class="dest__meta-val">Jul a Fev</span>
             </div>
           </div>
         </div>
@@ -1782,11 +1647,7 @@ ul { list-style: none; }
      ============================================================ -->
 <section class="manifesto" id="sobre">
   <div class="manifesto__media reveal">
-    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1400&q=80&auto=format&fit=crop" alt="Arquitetura integrada à natureza" />
-    <div class="manifesto__stamp">
-      <span class="manifesto__stamp-num">2019</span>
-      <span class="manifesto__stamp-lbl">DESDE</span>
-    </div>
+    <img src="images/casa-zama/rede-01.jpg" alt="Rede na varanda da Casa Zamá" />
   </div>
   <div class="manifesto__content">
     <div class="section__eyebrow reveal">HOME & VILLAS BY MONTE DOURADO</div>
@@ -1800,9 +1661,8 @@ ul { list-style: none; }
         esportes e natureza.
       </p>
       <p>
-        Cada propriedade é escolhida por critérios rigorosos de arquitetura,
-        localização e operação. O resultado é um portfólio curado de villas onde
-        aventura e tranquilidade coexistem.
+        A operação começa pela Casa Zamá, no Vila do Chapéu, na Taíba. Curadoria
+        de arquitetura, localização e operação, para dias de aventura e de calma.
       </p>
     </div>
 
@@ -1834,10 +1694,10 @@ ul { list-style: none; }
     <div class="section__head">
       <div class="section__head-l">
         <div class="section__eyebrow reveal">EXPERIÊNCIAS</div>
-        <h2 class="section__title reveal">Mais que hospedagem.</h2>
+        <h2 class="section__title reveal">O Ceará por dentro.</h2>
         <p class="section__sub reveal">
-          Passeios, esportes e gastronomia reservados em um só lugar.
-          Curadoria local para viver o Ceará por dentro.
+          Passeios, esportes e gastronomia reservados em um só lugar,
+          com curadoria local do concierge.
         </p>
       </div>
     </div>
@@ -1850,7 +1710,7 @@ ul { list-style: none; }
         <div class="exp-card__body">
           <div class="exp-card__eyebrow">ESPORTES</div>
           <h3 class="exp-card__name">Aulas de Kitesurf</h3>
-          <p class="exp-card__text">Escolas parceiras no Preá, Cumbuco e Taíba com instrutores certificados.</p>
+          <p class="exp-card__text">Aulas na Taíba com instrutores certificados, agendadas pelo concierge.</p>
         </div>
       </div>
       <div class="exp-card reveal" style="--i:1">
@@ -1908,8 +1768,7 @@ ul { list-style: none; }
       Entre na lista<br/><em>de quem vive o mar.</em>
     </h2>
     <p class="cta__text">
-      Novas villas, ventos da temporada e recomendações de chef, direto no seu e-mail.
-      Nada de pressa, nada de urgência. Só bom conteúdo.
+      Ventos da temporada, novidades da casa e recomendações locais, direto no seu e-mail.
     </p>
     <form class="cta__form" onsubmit="event.preventDefault();">
       <input class="cta__input" type="email" placeholder="seu@email.com" />
@@ -1939,13 +1798,11 @@ ul { list-style: none; }
     </div>
 
     <div class="footer__col">
-      <div class="footer__col-title">Destinos</div>
+      <div class="footer__col-title">Explorar</div>
       <ul>
-        <li><a href="#">Taíba</a></li>
-        <li><a href="#">Ilha do Guajiru</a></li>
-        <li><a href="#">Todas as villas</a></li>
-        <li><a href="#">Mapa interativo</a></li>
-        <li><a href="#">Calendário de vento</a></li>
+        <li><a href="casa-zama.html">Casa Zamá</a></li>
+        <li><a href="destino-taiba.html">Taíba</a></li>
+        <li><a href="vila-do-chapeu.html">Vila do Chapéu</a></li>
       </ul>
     </div>
 
@@ -1954,18 +1811,15 @@ ul { list-style: none; }
       <ul>
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
-        <li><a href="#">Eventos e retiros</a></li>
         <li><a href="contato.html">Anuncie sua home</a></li>
-        <li><a href="#">Concierge</a></li>
+        <li><a href="contato.html">Concierge</a></li>
       </ul>
     </div>
 
     <div class="footer__col">
       <div class="footer__col-title">Atendimento</div>
       <ul>
-        <li><a href="#">Central de ajuda</a></li>
-        <li><a href="#">Política de reserva</a></li>
-        <li><a href="#">Cancelamento</a></li>
+        <li><a href="https://wa.me/5585981488365" target="_blank">WhatsApp</a></li>
         <li><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></li>
       </ul>
     </div>
@@ -1973,11 +1827,6 @@ ul { list-style: none; }
 
   <div class="footer__bottom">
     <div class="footer__copy">© HOME & VILLAS 2026 · BY MONTE DOURADO</div>
-    <div class="footer__legal">
-      <a href="#">PRIVACIDADE</a>
-      <a href="#">TERMOS</a>
-      <a href="#">COOKIES</a>
-    </div>
   </div>
 </footer>
 
@@ -1993,14 +1842,6 @@ ul { list-style: none; }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
-
-  // Chips de categoria - toggle active
-  document.querySelectorAll('.cat').forEach(c => {
-    c.addEventListener('click', () => {
-      document.querySelectorAll('.cat').forEach(x => x.classList.remove('is-active'));
-      c.classList.add('is-active');
-    });
-  });
 
   // Favorito toggle
   document.querySelectorAll('.villa__fav').forEach(f => {
@@ -2024,29 +1865,18 @@ ul { list-style: none; }
   }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // Carousel de categorias - scroll horizontal com wheel
-  const catsScroll = document.getElementById('catsScroll');
-  if (catsScroll) {
-    catsScroll.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        e.preventDefault();
-        catsScroll.scrollLeft += e.deltaY;
-      }
-    }, { passive: false });
+  // Mobile menu
+  const hbg=document.getElementById('hamburger');
+  const mm=document.getElementById('mobileMenu');
+  const mc=document.getElementById('menuClose');
+  if(hbg&&mm&&mc){
+    hbg.addEventListener('click',()=>mm.classList.add('is-open'));
+    mc.addEventListener('click',()=>mm.classList.remove('is-open'));
+    mm.addEventListener('click',(e)=>{if(e.target===mm)mm.classList.remove('is-open')});
+    mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('is-open')));
   }
 </script>
 
-<script src="i18n.js">
-// Mobile menu
-const hbg=document.getElementById('hamburger');
-const mm=document.getElementById('mobileMenu');
-const mc=document.getElementById('menuClose');
-if(hbg&&mm&&mc){
-  hbg.addEventListener('click',()=>mm.classList.add('is-open'));
-  mc.addEventListener('click',()=>mm.classList.remove('is-open'));
-  mm.addEventListener('click',(e)=>{if(e.target===mm)mm.classList.remove('is-open')});
-  mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('is-open')));
-}
-</script>
+<script src="i18n.js"></script>
 </body>
 </html>
