@@ -1074,6 +1074,24 @@ input { font: inherit; }
   .similar__head { flex-direction: column; align-items: flex-start; }
 }
 </style>
+<link rel="icon" type="image/png" href="images/casa-zama/zama-simbolo-marrom.png" />
+<style>
+/* ============ IDENTIDADE CASA ZAMÁ ============
+   Cada casa da plataforma segue a própria identidade.
+   Paleta oficial (PDF #INSTITUCIONAL MARCA): creme #F4F4EA,
+   oliva #4A4235, marrom #776654, sálvia #A09F8D, greige #B3AC9C, bege #D6CFBF */
+:root{
+  --navy-100:#4A4235; --navy-80:#6C6559; --navy-60:#8E897D; --navy-40:#B0ADA2; --navy-20:#D2D0C6; --navy-10:#E3E2D8;
+  --gold-100:#776654; --gold-80:#908272; --gold-60:#A99F90; --gold-40:#C2BBAE; --gold-20:#DBD8CC; --gold-10:#E8E5DB;
+  --sand-100:#A09F8D; --sand-80:#B3AC9C; --sand-60:#C6C1B1; --sand-40:#D6CFBF; --sand-20:#E5E1D4; --sand-10:#EFEDE2;
+  --off-white:#F4F4EA;
+}
+/* títulos da página ecoam o wordmark: caixa alta fina e espaçada */
+.page__title, .content__title, .gal-full__title { font-family:'Cabinet Grotesk',sans-serif; font-weight:300; text-transform:uppercase; letter-spacing:.13em; }
+.page__title img.zama-wordmark { height:clamp(44px,5.5vw,76px); width:auto; display:block; }
+.zama-simbolo-meta { height:16px; width:auto; display:inline-block; }
+.booking .zama-simbolo { height:32px; width:auto; margin-bottom:var(--s3); display:block; }
+</style>
 </head>
 
 <body>
@@ -1134,29 +1152,18 @@ input { font: inherit; }
 
   <header class="page__head">
     <div class="page__head-l">
-      <div class="page__eyebrow">SELO CURADORIA · TAÍBA</div>
-      <h1 class="page__title">Casa Zamá</h1>
+      <div class="page__eyebrow">CASA DA HOME &amp; VILLAS · TAÍBA</div>
+      <h1 class="page__title"><img class="zama-wordmark" src="images/casa-zama/zama-horizontal-marrom.png" alt="Casa Zamá" /></h1>
       <div class="page__meta">
         <span class="page__meta-item">
-          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
-          <strong>Nova</strong>
+          <img class="zama-simbolo-meta" src="images/casa-zama/zama-simbolo-marrom.png" alt="" />
+          <a href="vila-do-chapeu.html">Vila do Chapéu</a>
         </span>
         <span class="page__meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
           <a href="#localizacao">Morro do Chapéu, Taíba · Ceará</a>
         </span>
       </div>
-    </div>
-
-    <div class="page__actions">
-      <button class="iconbtn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7M16 6l-4-4-4 4M12 2v14"/></svg>
-        Compartilhar
-      </button>
-      <button class="iconbtn" id="favBtn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-        Salvar
-      </button>
     </div>
   </header>
 
@@ -1211,8 +1218,8 @@ input { font: inherit; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 17h14v-5H5zM3 12V7h18v5M7 17v3M17 17v3"/></svg>
             </div>
             <div>
-              <div class="highlight__t">Transfer privativo incluso</div>
-              <p class="highlight__d">Buscamos você no Aeroporto de Fortaleza e levamos direto à villa. Ida e volta em veículo preparado para o terreno.</p>
+              <div class="highlight__t">Transfer sob consulta</div>
+              <p class="highlight__d">Organizamos a busca no Aeroporto de Fortaleza, ida e volta, em veículo preparado para o terreno.</p>
             </div>
           </div>
           <div class="highlight">
@@ -1220,8 +1227,8 @@ input { font: inherit; }
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 0 0 18M3 12h18"/></svg>
             </div>
             <div>
-              <div class="highlight__t">Concierge 24h</div>
-              <p class="highlight__d">Do jantar com chef privado ao aluguel de prancha de kite: uma equipe local resolve qualquer pedido, a qualquer hora.</p>
+              <div class="highlight__t">Concierge dedicado</div>
+              <p class="highlight__d">Do jantar com chef privado ao aluguel de prancha de kite: a equipe local cuida dos pedidos da estadia.</p>
             </div>
           </div>
           <div class="highlight">
@@ -1240,7 +1247,7 @@ input { font: inherit; }
       <section>
         <h2 class="content__title">Sobre esta villa</h2>
         <p class="desc__lead">
-          Uma casa baixa de linhas limpas, cobogós artesanais e piscina de borda contínua — a alguns minutos do vento de Taíba.
+          Uma casa baixa de linhas limpas, cobogós artesanais e piscina de borda contínua, a alguns minutos do vento de Taíba.
         </p>
         <div class="desc__body">
           <p>
@@ -1259,7 +1266,7 @@ input { font: inherit; }
             As cinco suítes seguem a mesma lógica serena: cama king, paredes de cimento
             texturizado, peças artesanais do nordeste brasileiro e banheiros com chuveiro
             aberto em meio a plantas tropicais. Cozinha principal equipada com tudo para
-            semanas longas — da máquina de café italiana ao conjunto completo de taças.
+            semanas longas: da máquina de café italiana ao conjunto completo de taças.
           </p>
           <p>
             A Casa Zamá fica no condomínio <strong>Vila do Chapéu</strong>, no Morro do
@@ -1449,6 +1456,7 @@ input { font: inherit; }
     <!-- ========== BOOKING CARD ========== -->
     <aside>
       <div class="booking">
+        <img class="zama-simbolo" src="images/casa-zama/zama-simbolo-marrom.png" alt="" />
         <div class="booking__head">
           <div class="booking__price">
             <span class="booking__price-val">Reservas</span>
@@ -1567,13 +1575,6 @@ input { font: inherit; }
      JS
      ============================================================ -->
 <script>
-  // Favoritar
-  const favBtn = document.getElementById('favBtn');
-  favBtn.addEventListener('click', () => {
-    const on = favBtn.classList.toggle('is-on');
-    favBtn.querySelector('svg').setAttribute('fill', on ? 'currentColor' : 'none');
-  });
-
   // Lightbox
   const photos = [
     'fachada-principal', 'area-gourmet-dia', 'area-gourmet-noite', 'suite-master',
