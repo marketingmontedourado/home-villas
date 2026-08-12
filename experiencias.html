@@ -45,7 +45,10 @@ ul { list-style: none; }
   padding: var(--s4) var(--s7);
   display: flex; align-items: center; justify-content: space-between;
   transition: all .3s ease;
-  background: linear-gradient(180deg, rgba(249,249,240,0.92) 0%, rgba(249,249,240,0.5) 55%, rgba(249,249,240,0) 100%);
+  background: rgba(249, 249, 240, 0.55);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border-bottom: 1px solid rgba(42, 62, 91, 0.08);
 }
 .nav.is-scrolled {
   background: rgba(249, 249, 240, 0.72);
