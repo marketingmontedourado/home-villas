@@ -182,6 +182,15 @@
     'seu@email.com':{en:'your@email.com',es:'su@email.com',fr:'votre@email.com'},
     'EXPERIÊNCIAS':{en:'EXPERIENCES',es:'EXPERIENCIAS',fr:'EXPÉRIENCES'},
     'Fundador':{en:'Founder',es:'Fundador',fr:'Fondateur'},
+    'ONDE A CASA ESTÁ':{en:'WHERE THE HOUSE IS',es:'DONDE ESTÁ LA CASA',fr:'OÙ SE TROUVE LA MAISON'},
+    'O condomínio.':{en:'The community.',es:'El condominio.',fr:'La résidence.'},
+    'Conhecer o Vila do Chapéu':{en:'Discover Vila do Chapéu',es:'Conocer Vila do Chapéu',fr:'Découvrir le Vila do Chapéu'},
+    'Lazer, segurança e natureza ao redor da Casa Zamá':{en:'Leisure, security and nature around Casa Zamá',es:'Ocio, seguridad y naturaleza alrededor de la Casa Zamá',fr:'Loisirs, sécurité et nature autour de la Casa Zamá'},
+    'HOSPEDAGEM NA TAÍBA':{en:'STAYS IN TAÍBA',es:'ALOJAMIENTO EN TAÍBA',fr:'SÉJOURS À TAÍBA'},
+    'A nossa':{en:'Our',es:'Nuestra',fr:'Notre'},
+    'casa.':{en:'house.',es:'casa.',fr:'maison.'},
+    'O CONDOMÍNIO':{en:'THE COMMUNITY',es:'EL CONDOMINIO',fr:'LA RÉSIDENCE'},
+    'A onda do Morro do Chapéu é point clássico de surfistas no litoral cearense.':{en:'The Morro do Chapéu wave is a classic surf spot on the coast of Ceará.',es:'La ola del Morro do Chapéu es un point clásico de surfistas en el litoral de Ceará.',fr:'La vague du Morro do Chapéu est un spot de surf classique du littoral du Ceará.'},
     'A marca por trás de cada villa: a incorporadora que cria refúgios para quem vive o esporte e a natureza no litoral cearense.':{en:'The brand behind every villa: the developer that creates refuges for those who live sports and nature on the coast of Ceará.',es:'La marca detrás de cada villa: la desarrolladora que crea refugios para quienes viven el deporte y la naturaleza en el litoral de Ceará.',fr:'La marque derrière chaque villa : le promoteur qui crée des refuges pour ceux qui vivent le sport et la nature sur le littoral du Ceará.'},
     'Quando você reserva uma home Home & Villas, tem a segurança de uma operação respaldada pela Monte Dourado, com empreendimentos consolidados na Taíba e um time dedicado ao litoral cearense.':{en:'When you book a Home & Villas home, you have the security of an operation backed by Monte Dourado, with established developments in Taíba and a team dedicated to the coast of Ceará.',es:'Cuando reserva una home Home & Villas, tiene la seguridad de una operación respaldada por Monte Dourado, con emprendimientos consolidados en Taíba y un equipo dedicado al litoral de Ceará.',fr:'Lorsque vous réservez une maison Home & Villas, vous avez la sécurité d’une opération soutenue par Monte Dourado, avec des projets établis à Taíba et une équipe dédiée au littoral du Ceará.'}
   };
