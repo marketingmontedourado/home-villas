@@ -46,13 +46,13 @@ ul { list-style: none; }
   display: flex; align-items: center; justify-content: space-between;
   transition: all .3s ease;
   background: rgba(249, 249, 240, 0.15);
-  backdrop-filter: blur(22px) saturate(150%) brightness(1.28);
-  -webkit-backdrop-filter: blur(22px) saturate(150%) brightness(1.28);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
   border-bottom: 1px solid rgba(42, 62, 91, 0.08);
 }
 .nav.is-scrolled {
   background: rgba(249, 249, 240, 0.3);
-  backdrop-filter: blur(22px) saturate(150%) brightness(1.28);
+  backdrop-filter: blur(22px) saturate(160%);
   border-bottom: 1px solid var(--navy-10);
   padding: var(--s3) var(--s7);
 }
@@ -73,10 +73,13 @@ ul { list-style: none; }
 .nav.is-scrolled .nav__logo-text span:last-child { color: var(--gold-100); }
 .nav__logo-img { height: 48px; width: auto; display: block; }
 
-/* contraste do texto sobre o vidro */
-.nav__menu a, .nav__lang { text-shadow: 0 1px 2px rgba(249,249,240,.85), 0 0 14px rgba(249,249,240,.7); }
-.nav__lang svg { filter: drop-shadow(0 0 5px rgba(249,249,240,.8)); }
-.nav__logo-img { filter: drop-shadow(0 1px 2px rgba(249,249,240,.85)) drop-shadow(0 0 12px rgba(249,249,240,.6)); }
+
+/* tom adaptativo: claro sobre fundo escuro, azul sobre fundo claro */
+.nav--dark-bg .nav__menu a, .nav--dark-bg .nav__lang { color: var(--off-white); }
+.nav--dark-bg .nav__menu a:hover { color: var(--sand-100); }
+.nav__logo-img--claro { display: none; }
+.nav--dark-bg .nav__logo-img--claro { display: block; }
+.nav--dark-bg .nav__logo-img--azul { display: none; }
 .nav__menu { display: flex; align-items: center; gap: var(--s6); }
 .nav__menu a {
   font-family: var(--title); font-size: 11px;
@@ -797,7 +800,8 @@ ul { list-style: none; }
 <!-- NAV -->
 <nav class="nav" id="nav">
   <a href="index.html" class="nav__logo" aria-label="Home & Villas">
-    <img src="images/brand/hv-horizontal-azul.png" alt="Home & Villas by Monte Dourado" class="nav__logo-img">
+    <img src="images/brand/hv-horizontal-azul.png" alt="Home & Villas by Monte Dourado" class="nav__logo-img nav__logo-img--azul">
+    <img src="images/brand/hv-horizontal-completa-areia.png" alt="" class="nav__logo-img nav__logo-img--claro">
   </a>
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
@@ -1167,17 +1171,42 @@ ul { list-style: none; }
   });
 </script>
 
-<script src="i18n.js">
-// Mobile menu
-const hbg=document.getElementById('hamburger');
-const mm=document.getElementById('mobileMenu');
-const mc=document.getElementById('menuClose');
-if(hbg&&mm&&mc){
-  hbg.addEventListener('click',()=>mm.classList.add('is-open'));
-  mc.addEventListener('click',()=>mm.classList.remove('is-open'));
-  mm.addEventListener('click',(e)=>{if(e.target===mm)mm.classList.remove('is-open')});
-  mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mm.classList.remove('is-open')));
-}
+<script>
+  // Mobile menu
+  var hbg=document.getElementById('hamburger');
+  var mm=document.getElementById('mobileMenu');
+  var mc=document.getElementById('menuClose');
+  if(hbg&&mm&&mc){
+    hbg.addEventListener('click',function(){mm.classList.add('is-open')});
+    mc.addEventListener('click',function(){mm.classList.remove('is-open')});
+    mm.addEventListener('click',function(e){if(e.target===mm)mm.classList.remove('is-open')});
+    mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('is-open')})});
+  }
 </script>
+<script>
+(function(){
+  var nav=document.querySelector('.nav');
+  function lum(c){var m=c.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);if(!m)return null;var a=m[4]===undefined?1:parseFloat(m[4]);if(a<0.4)return null;return (0.2126*m[1]+0.7152*m[2]+0.0722*m[3])/255;}
+  function tone(){
+    if(!nav)return;
+    var r=nav.getBoundingClientRect();
+    var y=(r.bottom||90)+6;
+    var els=document.elementsFromPoint(window.innerWidth/2,y).filter(function(e){return !nav.contains(e)&&e!==nav;});
+    var dark=false;
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      if(el.tagName==='IMG'){dark=true;break;}
+      var L=lum(getComputedStyle(el).backgroundColor);
+      if(L!==null){dark=L<0.5;break;}
+    }
+    nav.classList.toggle('nav--dark-bg',dark);
+  }
+  window.addEventListener('scroll',tone,{passive:true});
+  window.addEventListener('resize',tone);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',tone);else tone();
+  setTimeout(tone,300);
+})();
+</script>
+<script src="i18n.js"></script>
 </body>
 </html>
