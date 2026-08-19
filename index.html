@@ -1296,7 +1296,7 @@ ul { list-style: none; }
   max-width: 340px;
   margin-bottom: var(--s5);
 }
-.footer__social { display: flex; justify-content: center; gap: var(--s4); align-items: center; margin-top: var(--s4); }
+.footer__social { display: flex; justify-content: flex-start; gap: var(--s4); align-items: center; margin-top: var(--s4); }
 .footer__social a {
   width: 42px; height: 42px;
   border-radius: 50%;
@@ -1308,7 +1308,7 @@ ul { list-style: none; }
   transition: all .25s;
 }
 .footer__social a:hover { background: var(--navy-100); color: var(--off-white); border-color: var(--navy-100); }
-.footer__social svg { width: 16px; height: 16px; }
+.footer__social svg { width: 16px; height: 16px; display: block; flex-shrink: 0; margin: 0; }
 
 .footer__col-title {
   font-family: var(--title);
@@ -1486,7 +1486,7 @@ ul { list-style: none; }
 
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
-    <li><a href="#villas">A Casa</a></li>
+    <li><a href="#villas">As casas</a></li>
     <li><a href="#destinos">Taíba</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#exp">Experiências</a></li>
@@ -1516,7 +1516,7 @@ ul { list-style: none; }
     </button>
     <div class="mobile-menu__links">
       <a href="index.html">Início</a>
-      <a href="casa-zama.html">A Casa</a>
+      <a href="casa-zama.html">As casas</a>
       <a href="destino-taiba.html">Taíba</a>
       <a href="sobre.html">Sobre</a>
       <a href="experiencias.html">Experiências</a>

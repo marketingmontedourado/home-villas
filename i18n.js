@@ -132,7 +132,7 @@
     'Vegetação nativa preservada':{en:'Preserved native vegetation',es:'Vegetación nativa preservada',fr:'Végétation native préservée'},
     'BEM-ESTAR':{en:'WELLNESS',es:'BIENESTAR',fr:'BIEN-ÊTRE'},
     'TAÍBA · CEARÁ · BRASIL':{en:'TAÍBA · CEARÁ · BRAZIL',es:'TAÍBA · CEARÁ · BRASIL',fr:'TAÍBA · CEARÁ · BRÉSIL'},
-    'A Casa':{en:'The House',es:'La Casa',fr:'La Maison'},
+    'As casas':{en:'The Houses',es:'Las Casas',fr:'Les Maisons'},
     'Início':{en:'Home',es:'Inicio',fr:'Accueil'},
     'A CASA':{en:'THE HOUSE',es:'LA CASA',fr:'LA MAISON'},
     'Conhecer a Casa Zamá':{en:'Discover Casa Zamá',es:'Conocer la Casa Zamá',fr:'Découvrir la Casa Zamá'},
