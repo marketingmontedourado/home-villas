@@ -1409,6 +1409,7 @@ ul { list-style: none; }
 .casa-card__body { padding: var(--s7) var(--s7); display: flex; flex-direction: column; justify-content: center; gap: var(--s4); }
 .casa-card__loc { font-family: var(--title); font-size: 10.5px; letter-spacing: .22em; color: var(--gold-100); text-transform: uppercase; }
 .casa-card__logo { height: clamp(34px, 3.4vw, 46px); width: auto; align-self: flex-start; }
+.casa-card__name { font-size: clamp(26px, 2.6vw, 38px); line-height: 1; text-transform: uppercase; letter-spacing: .1em; color: var(--navy-100); font-weight: 400; }
 .casa-card__desc { font-size: 15px; color: var(--navy-80); line-height: 1.6; max-width: 46ch; }
 .casa-card__meta { font-size: 12.5px; letter-spacing: .04em; color: var(--navy-60); display: flex; gap: 10px; flex-wrap: wrap; }
 .casa-card__cta { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--s2); font-family: var(--title); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--navy-100); }
@@ -1565,10 +1566,10 @@ ul { list-style: none; }
 <section class="section" id="villas">
   <div class="section__head">
     <div class="section__head-l">
-      <div class="section__eyebrow reveal">A CASA</div>
-      <h2 class="section__title reveal">A casa da<br/><em>Home &amp; Villas.</em></h2>
+      <div class="section__eyebrow reveal">AS CASAS</div>
+      <h2 class="section__title reveal">As casas da<br/><em>Home &amp; Villas.</em></h2>
       <p class="section__sub reveal">
-        A Casa Zamá fica no Vila do Chapéu, condomínio da Monte Dourado na Taíba.
+        Duas casas no Vila do Chapéu, condomínio da Monte Dourado na Taíba.
         Gestão completa da estadia, concierge dedicado e o mar a poucos minutos.
       </p>
     </div>
@@ -1587,6 +1588,29 @@ ul { list-style: none; }
         <span>3 suítes</span>
         <span>·</span>
         <span>6 hóspedes</span>
+        <span>·</span>
+        <span>Reservas pelo concierge</span>
+      </div>
+      <span class="casa-card__cta">
+        Conhecer a casa
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </span>
+    </div>
+  </a>
+
+  <a href="vila-vento.html" class="casa-card reveal" style="margin-top:var(--s6);">
+    <div class="casa-card__media">
+      <img src="images/vila-vento/piscina-area-comum.jpg" alt="Vila Vento - piscina e área comum" />
+      <div class="empr__badge">TAÍBA</div>
+    </div>
+    <div class="casa-card__body">
+      <div class="casa-card__loc">TAÍBA · VILA DO CHAPÉU</div>
+      <h3 class="casa-card__name">Vila Vento</h3>
+      <p class="casa-card__desc">Quatro bangalôs independentes em volta de uma área comum com cozinha, estar e piscina.</p>
+      <div class="casa-card__meta">
+        <span>4 bangalôs</span>
+        <span>·</span>
+        <span>12 hóspedes</span>
         <span>·</span>
         <span>Reservas pelo concierge</span>
       </div>
@@ -1643,8 +1667,8 @@ ul { list-style: none; }
           </p>
           <div class="dest__meta">
             <div class="dest__meta-item">
-              <span class="dest__meta-lbl">A CASA</span>
-              <span class="dest__meta-val">Casa Zamá</span>
+              <span class="dest__meta-lbl">AS CASAS</span>
+              <span class="dest__meta-val">Casa Zamá e Vila Vento</span>
             </div>
             <div class="dest__meta-item">
               <span class="dest__meta-lbl">DE FORTALEZA</span>
@@ -1816,6 +1840,7 @@ ul { list-style: none; }
       <div class="footer__col-title">Explorar</div>
       <ul>
         <li><a href="casa-zama.html">Casa Zamá</a></li>
+        <li><a href="vila-vento.html">Vila Vento</a></li>
         <li><a href="destino-taiba.html">Taíba</a></li>
         <li><a href="vila-do-chapeu.html">Vila do Chapéu</a></li>
       </ul>
