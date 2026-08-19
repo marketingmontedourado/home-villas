@@ -238,6 +238,13 @@ ul { list-style: none; }
 .form-file { font-family: var(--body); font-size: 13.5px; padding: 10px 14px; border: 1px dashed var(--navy-20); border-radius: 14px; background: var(--off-white); color: var(--navy-80); font-weight: 300; cursor: pointer; }
 .form-file::file-selector-button { font-family: var(--title); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; padding: 10px 18px; margin-right: var(--s3); border: 0; border-radius: var(--r-pill); background: var(--sand-100); color: var(--navy-100); cursor: pointer; }
 .form-hint { font-family: var(--body); font-size: 12px; margin-top: 2px; color: var(--navy-60); font-weight: 300; line-height: 1.5; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.chip input { position: absolute; opacity: 0; width: 0; height: 0; }
+.chip span { display: inline-block; padding: 8px 15px; border: 1px solid var(--navy-20); border-radius: var(--r-pill); font-family: var(--body); font-size: 13px; font-weight: 300; color: var(--navy-80); background: var(--off-white); cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
+.chip span:hover { border-color: var(--gold-100); }
+.chip input:checked + span { background: var(--navy-100); border-color: var(--navy-100); color: var(--off-white); }
+@media (max-width: 900px) { .form-row { grid-template-columns: 1fr; } }
 .form-ok { display: none; padding: var(--s5); border-radius: var(--r-card); background: var(--sand-20); border: 1px solid var(--sand-100); margin-bottom: var(--s6); }
 .form-ok__t { font-family: var(--title); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-100); margin-bottom: var(--s2); }
 .form-ok__d { font-family: var(--body); font-size: 14px; color: var(--navy-80); font-weight: 300; }
@@ -412,66 +419,97 @@ ul { list-style: none; }
         <label class="form-label" for="nome">Nome completo</label>
         <input id="nome" name="Nome" type="text" class="form-input" placeholder="Seu nome" required />
       </div>
-      <div class="form-group">
-        <label class="form-label" for="email">E-mail</label>
-        <input id="email" name="E-mail" type="email" class="form-input" placeholder="seu@email.com" required />
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input id="email" name="E-mail" type="email" class="form-input" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tel">Telefone / WhatsApp</label>
+          <input id="tel" name="Telefone" type="tel" class="form-input" placeholder="(00) 00000-0000" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="estado">Estado</label>
+          <select id="estado" name="Estado" class="form-input" required>
+            <option value="">Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="local">Cidade, praia ou condomínio</label>
+          <input id="local" name="Localizacao" type="text" class="form-input" placeholder="Taíba, Vila do Chapéu" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="quartos">Quartos</label>
+          <select id="quartos" name="Quartos" class="form-input">
+            <option value="">Selecione</option>
+            <option>1 quarto</option>
+            <option>2 quartos</option>
+            <option>3 quartos</option>
+            <option>4 quartos</option>
+            <option>5 quartos ou mais</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="uso">Como você usa a casa hoje</label>
+          <select id="uso" name="Uso atual" class="form-input">
+            <option value="">Selecione</option>
+            <option>Uso próprio, sem alugar</option>
+            <option>Já alugo por conta própria</option>
+            <option>Já alugo com outra gestora</option>
+            <option>Fechada no momento</option>
+            <option>Em obra ou em construção</option>
+          </select>
+        </div>
       </div>
       <div class="form-group">
-        <label class="form-label" for="tel">Telefone / WhatsApp</label>
-        <input id="tel" name="Telefone" type="tel" class="form-input" placeholder="(85) 98148-8365" required />
+        <label class="form-label">O que a casa tem</label>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Piscina" /><span>Piscina</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Área gourmet" /><span>Área gourmet</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Churrasqueira" /><span>Churrasqueira</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Varanda ou deck" /><span>Varanda ou deck</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Vista mar" /><span>Vista mar</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Pé na areia" /><span>Pé na areia</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Ar-condicionado" /><span>Ar-condicionado</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Jardim" /><span>Jardim</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Estacionamento" /><span>Estacionamento</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Condomínio fechado" /><span>Condomínio fechado</span></label>
+          <label class="chip"><input type="checkbox" name="A casa tem" value="Mobiliada" /><span>Mobiliada</span></label>
+        </div>
+        <input name="Outros detalhes" type="text" class="form-input" placeholder="Outros detalhes da casa" style="margin-top:8px;" />
       </div>
-      <div class="form-group">
-        <label class="form-label" for="estado">Estado</label>
-        <select id="estado" name="Estado" class="form-input" required>
-          <option value="">Selecione o estado</option>
-          <option value="AC">Acre</option>
-          <option value="AL">Alagoas</option>
-          <option value="AP">Amapá</option>
-          <option value="AM">Amazonas</option>
-          <option value="BA">Bahia</option>
-          <option value="CE">Ceará</option>
-          <option value="DF">Distrito Federal</option>
-          <option value="ES">Espírito Santo</option>
-          <option value="GO">Goiás</option>
-          <option value="MA">Maranhão</option>
-          <option value="MT">Mato Grosso</option>
-          <option value="MS">Mato Grosso do Sul</option>
-          <option value="MG">Minas Gerais</option>
-          <option value="PA">Pará</option>
-          <option value="PB">Paraíba</option>
-          <option value="PR">Paraná</option>
-          <option value="PE">Pernambuco</option>
-          <option value="PI">Piauí</option>
-          <option value="RJ">Rio de Janeiro</option>
-          <option value="RN">Rio Grande do Norte</option>
-          <option value="RS">Rio Grande do Sul</option>
-          <option value="RO">Rondônia</option>
-          <option value="RR">Roraima</option>
-          <option value="SC">Santa Catarina</option>
-          <option value="SP">São Paulo</option>
-          <option value="SE">Sergipe</option>
-          <option value="TO">Tocantins</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="local">Cidade, praia ou condomínio</label>
-        <input id="local" name="Localizacao" type="text" class="form-input" placeholder="Taíba, Vila do Chapéu" required />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="imovel">Como é a casa</label>
-        <input id="imovel" name="Imovel" type="text" class="form-input" placeholder="Quartos, piscina, área externa" />
-      </div>
-      <div class="form-group">
-        <label class="form-label" for="uso">Como você usa a casa hoje</label>
-        <select id="uso" name="Uso atual" class="form-input">
-          <option value="">Selecione</option>
-          <option>Uso próprio, sem alugar</option>
-          <option>Já alugo por conta própria</option>
-          <option>Já alugo com outra gestora</option>
-          <option>Fechada no momento</option>
-          <option>Em obra ou em construção</option>
-        </select>
-      </div>
+
       <div class="form-group">
         <label class="form-label" for="fotos">Fotos da casa</label>
         <input id="fotos" name="attachment" type="file" class="form-file" accept="image/*" multiple />
@@ -493,19 +531,19 @@ ul { list-style: none; }
 
     <div class="contact-info">
       <div class="info-card">
-        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        <div class="info-card__title">Prefere conversar</div>
-        <div class="info-card__text">Fale direto com a nossa equipe.<br/><a href="https://wa.me/5585981488365?text=Ol%C3%A1!%20Tenho%20uma%20casa%20e%20gostaria%20de%20alugar%20com%20a%20Home%20%26%20Villas." target="_blank">(85) 98148-8365</a></div>
+        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div class="info-card__title">O que acontece depois</div>
+        <div class="info-card__text">A nossa equipe lê o que você enviou e retorna para conversar sobre a casa e marcar a visita técnica.</div>
       </div>
       <div class="info-card">
-        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        <div class="info-card__title">E-mail</div>
-        <div class="info-card__text">Envie as fotos e os detalhes por aqui.<br/><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></div>
+        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M8 6l1.5-2h5L16 6"/><circle cx="12" cy="13" r="3.2"/></svg>
+        <div class="info-card__title">Que fotos ajudam</div>
+        <div class="info-card__text">Fachada, área externa, sala, cozinha e cada quarto. Mesmo fotos simples de celular já mostram muito.</div>
       </div>
       <div class="info-card">
-        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        <div class="info-card__title">Onde atuamos</div>
-        <div class="info-card__text">Litoral cearense, com operação na Taíba e no Vila do Chapéu.</div>
+        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10.5 12 4l9 6.5"/><path d="M5 12v8h14v-8"/><path d="M10 20v-5h4v5"/></svg>
+        <div class="info-card__title">Casas de todo tipo</div>
+        <div class="info-card__text">Casa, vila, chalé ou bangalô, pronta ou em obra. Conte o que você tem e a gente estuda junto.</div>
       </div>
     </div>
   </div>
