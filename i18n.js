@@ -211,7 +211,7 @@
     'Consultar datas':{en:'Check dates',es:'Consultar fechas',fr:'Vérifier les dates'},
     'Atendimento pelo WhatsApp da Home & Villas':{en:'Service via the Home & Villas WhatsApp',es:'Atención por el WhatsApp de Home & Villas',fr:'Assistance via le WhatsApp de Home & Villas'},
     'Transfer do Aeroporto de Fortaleza':{en:'Transfer from Fortaleza Airport',es:'Transfer del Aeropuerto de Fortaleza',fr:'Transfert depuis l’aéroport de Fortaleza'},
-    'disponível sob consulta, em veículo adequado ao terreno.':{en:'available on request, in a vehicle suited to the terrain.',es:'disponible bajo consulta, en vehículo adecuado al terreno.',fr:'disponible sur demande, dans un véhicule adapté au terrain.'},
+    'disponível sob consulta.':{en:'available on request.',es:'disponible bajo consulta.',fr:'disponible sur demande.'},
     'Ver a casa':{en:'See the house',es:'Ver la casa',fr:'Voir la maison'},
     'A CASA NO CONDOMÍNIO':{en:'THE HOUSE IN THE COMMUNITY',es:'LA CASA EN EL CONDOMINIO',fr:'LA MAISON DANS LA RÉSIDENCE'},
     'Conhecer a casa':{en:'Discover the house',es:'Conocer la casa',fr:'Découvrir la maison'},
