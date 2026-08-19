@@ -6,6 +6,7 @@
     'Destinos':{en:'Destinations',es:'Destinos',fr:'Destinations'},
     'Sobre':{en:'About',es:'Acerca',fr:'À propos'},
     'Experiências':{en:'Experiences',es:'Experiencias',fr:'Expériences'},
+    'Sua casa':{en:'Your home',es:'Su casa',fr:'Votre maison'},
     'Alugue com a gente':{en:'List your home',es:'Alquile con nosotros',fr:'Louez avec nous'},
     'Contato':{en:'Contact',es:'Contacto',fr:'Contact'},
     'Reservar':{en:'Book Now',es:'Reservar',fr:'Réserver'},
