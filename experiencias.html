@@ -76,7 +76,25 @@ ul { list-style: none; }
 
 
 /* tom adaptativo: claro sobre fundo escuro, azul sobre fundo claro */
-.nav--dark-bg .nav__menu a, .nav--dark-bg .nav__lang {
+.nav--dark-bg .nav__menu a, .nav--dark-bg .nav__lang { color: var(--off-white); }
+.nav--dark-bg .nav__menu a:hover { color: var(--sand-100); }
+.nav__logo-img--claro { display: none !important; }
+.nav--dark-bg .nav__logo-img--claro { display: block !important; }
+.nav--dark-bg .nav__logo-img--azul { display: none !important; }
+.nav__menu { display: flex; align-items: center; gap: var(--s6); }
+.nav__menu a {
+  font-family: var(--title); font-size: 11px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--navy-100); transition: color .25s;
+}
+.nav.is-scrolled .nav__menu a { color: var(--navy-100); }
+.nav__menu a:hover { color: var(--gold-100); }
+.nav__menu a.nav__cta { color: var(--gold-100); }
+.nav__menu a.nav__cta:hover { color: var(--navy-100); }
+.nav--dark-bg .nav__menu a.nav__cta { color: var(--sand-100); }
+.nav--dark-bg .nav__menu a.nav__cta:hover { color: var(--off-white); }
+.nav.is-scrolled .nav__menu a:hover { color: var(--gold-100); }
+.nav__lang {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -88,13 +106,7 @@ ul { list-style: none; }
   color: var(--navy-100);
   transition: background .25s;
 }
-.nav.is-scrolled .nav__menu a { color: var(--navy-100); }
-.nav__menu a:hover { color: var(--gold-100); }
-.nav__menu a.nav__cta { color: var(--gold-100); }
-.nav__menu a.nav__cta:hover { color: var(--navy-100); }
-.nav--dark-bg .nav__menu a.nav__cta { color: var(--sand-100); }
-.nav--dark-bg .nav__menu a.nav__cta:hover { color: var(--off-white); }
-.nav.is-scrolled .nav__menu a:hover { color: var(--gold-100); }
+.nav__lang svg { width: 12px; height: 12px; }
 .nav__login {
   display: inline-flex;
   align-items: center;
@@ -109,9 +121,11 @@ ul { list-style: none; }
   background: var(--navy-100);
   transition: all .25s;
 }
-.nav__login:hover { background: var(--gold-100); border-color: var(--gold-100); color: var(--off-white); }
 .nav--dark-bg .nav__login { background: var(--sand-100); border-color: var(--sand-100); color: var(--navy-100); }
 .nav--dark-bg .nav__login:hover { background: var(--off-white); border-color: var(--off-white); color: var(--navy-100); }
+
+
+
 /* HAMBURGER MOBILE */
 .nav__hamburger {
   display: none;
@@ -433,7 +447,7 @@ ul { list-style: none; }
         <li><a href="destino-taiba.html">Taíba</a></li>
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
-        <li><a href="alugue-com-a-gente.html">Alugue com a gente</a></li>
+        <li><a href="alugue-com-a-gente.html" class="nav__cta">Sua casa</a></li>
       </ul>
     </div>
     <div class="footer__col">
