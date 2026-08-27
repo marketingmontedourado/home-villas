@@ -369,6 +369,9 @@ ul { list-style: none; }
 
 /* seletor de idioma dentro do menu mobile */
 .mobile-menu .nav__lang { display: inline-flex; align-self: flex-start; }
+
+/* menu padronizado com a home: caixa alta */
+.nav__menu a { font-family: var(--title); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; }
 </style>
 </head>
 <body>
@@ -380,7 +383,7 @@ ul { list-style: none; }
   </a>
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
-    <li><a href="casa-zama.html">As casas</a></li>
+    <li><a href="casas.html">As casas</a></li>
     <li><a href="destino-taiba.html">Taíba</a></li>
     <li><a href="experiencias.html">Serviços</a></li>
     <li><a href="sobre.html">Sobre</a></li>
@@ -409,7 +412,7 @@ ul { list-style: none; }
     </button>
     <div class="mobile-menu__links">
       <a href="index.html">Início</a>
-      <a href="casa-zama.html">As casas</a>
+      <a href="casas.html">As casas</a>
       <a href="destino-taiba.html">Taíba</a>
       <a href="experiencias.html">Serviços</a>
       <a href="sobre.html">Sobre</a>
@@ -429,7 +432,7 @@ ul { list-style: none; }
 
 <header class="page-hero">
   <div class="page-hero__bg">
-    <img src="images/taiba/aerea-praia-lg.jpg" alt="Vista aérea da praia da Taíba com as eólicas ao fundo" />
+    <img src="images/taiba/aereo-eolicas-lg.jpg" alt="Dunas, lagoas e eólicas da Taíba vistas do alto" />
   </div>
   <div class="page-hero__inner">
     <div class="page-hero__eyebrow">DESTINO</div>
@@ -483,7 +486,7 @@ ul { list-style: none; }
       </div>
     </div>
     <div class="exp-card reveal">
-      <img src="images/taiba/surf-taiba.jpg" alt="Onda do Morro do Chapéu" />
+      <img src="images/taiba/surf-por-do-sol.jpg" alt="Surfista a caminho do mar na luz dourada da Taíba" />
       <div class="exp-card__body">
         <div class="exp-card__tag">ONDAS</div>
         <h3 class="exp-card__name">Surf</h3>
@@ -515,7 +518,7 @@ ul { list-style: none; }
       </div>
     </div>
     <div class="exp-card reveal">
-      <img src="images/taiba/sunset-passarela-lg.jpg" alt="Passarela de madeira ao pôr do sol na Taíba" />
+      <img src="images/taiba/dunas-eolicas-lg.jpg" alt="Dunas douradas da Taíba com o mar e as eólicas" />
       <div class="exp-card__body">
         <div class="exp-card__tag">NATUREZA</div>
         <h3 class="exp-card__name">Dunas e lagoas</h3>
@@ -527,7 +530,7 @@ ul { list-style: none; }
 
 <section class="page-section">
   <div class="page-eyebrow">AS CASAS NA TAÍBA</div>
-  <h2 class="page-title reveal">Onde você<br/><em>vai ficar.</em></h2>
+  <h2 class="page-title reveal">Onde você<br/><em>quer ficar.</em></h2>
   <div class="page-grid" style="margin-top:var(--s7);">
     <a href="casa-zama.html" style="display:block; border-radius:var(--r-card); overflow:hidden; position:relative; aspect-ratio:16/10;" class="reveal">
       <img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá" style="width:100%; height:100%; object-fit:cover;" />
@@ -567,7 +570,7 @@ ul { list-style: none; }
     <div class="footer__col">
       <h4 class="footer__col-title">NAVEGAÇÃO</h4>
       <ul>
-        <li><a href="index.html#villas">Casas</a></li>
+        <li><a href="casas.html">Casas</a></li>
         <li><a href="destino-taiba.html">Taíba</a></li>
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
@@ -639,6 +642,6 @@ if(hamburger){
   setTimeout(tone,300);
 })();
 </script>
-<script src="i18n.js?v=20260827b"></script>
+<script src="i18n.js?v=20260827c"></script>
 </body>
 </html>
