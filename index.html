@@ -1487,6 +1487,9 @@ ul { list-style: none; }
 .hero__title, .page-hero__title, .section__title, .destinos__title, .manifesto__title, .cta__title, .page-title, .gal-full__title { font-family: 'alga', 'Boska', serif; font-weight: 400; }
 .hero__title em, .page-hero__title em, .section__title em, .destinos__title em, .manifesto__title em, .cta__title em, .page-title em, .gal-full__title em { color: inherit; }
 
+
+/* seletor de idioma dentro do menu mobile */
+.mobile-menu .nav__lang { display: inline-flex; align-self: flex-start; }
 </style>
 </head>
 
@@ -1540,6 +1543,10 @@ ul { list-style: none; }
       <a href="alugue-com-a-gente.html">Sua casa</a>
     </div>
     <div class="mobile-menu__cta">
+      <button class="nav__lang" aria-label="Idioma">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
+        PT
+      </button>
       <a href="reservas.html" class="btn-primary">Reservar</a>
     </div>
   </div>
