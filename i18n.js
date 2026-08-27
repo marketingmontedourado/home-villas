@@ -2,6 +2,12 @@
   var LANGS=['pt','en','es','fr'];
   var LABELS={pt:'PT',en:'EN',es:'ES',fr:'FR'};
   var T={
+    // ---- pagina As casas, 27/08/2026 ----
+    'quer ficar.':{en:'want to stay.',es:'quiere quedar.',fr:'voulez loger.'},
+    'Onde':{en:'Where',es:'Dónde',fr:'Où'},
+    'Hóspedes':{en:'Guests',es:'Huéspedes',fr:'Hôtes'},
+    'Ver disponibilidade':{en:'Check availability',es:'Ver disponibilidad',fr:'Voir les disponibilités'},
+    'Para mais de 6 hóspedes, a casa certa é o Vila Vento: os quatro bangalôs juntos recebem até 12.':{en:'For more than 6 guests, the right home is Vila Vento: the four bungalows together sleep up to 12.',es:'Para más de 6 huéspedes, la casa indicada es el Vila Vento: los cuatro bungalós juntos reciben hasta 12.',fr:'Pour plus de 6 hôtes, la bonne maison est le Vila Vento : les quatre bungalows réunis accueillent jusqu\'à 12.'},
     // ---- cobertura completa das internas, 27/08/2026 ----
     'PARA PROPRIETÁRIOS':{en:'FOR HOMEOWNERS',es:'PARA PROPIETARIOS',fr:'POUR LES PROPRIÉTAIRES'},
     'Alugue':{en:'List',es:'Alquile',fr:'Louez'},

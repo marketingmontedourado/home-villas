@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sobre · Home & Villas</title>
-<meta name="description" content="A Home &amp; Villas by Monte Dourado cuida de casas com curadoria na Taíba, litoral do Ceará, com concierge dedicado e equipe local." />
+<title>As casas · Home & Villas</title>
+<meta name="description" content="As casas da Home &amp; Villas na Taíba: Casa Zamá e Vila Vento, com datas e número de hóspedes do seu jeito." />
 <link rel="icon" href="images/brand/simbolo-azul.svg" />
 <link rel="stylesheet" href="https://use.typekit.net/gmt8jav.css">
 <style>
@@ -234,16 +234,81 @@ ul { list-style: none; }
 
 .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); margin-top: var(--s7); }
 .value-card { padding: var(--s6); background: var(--off-white); border-radius: var(--r-card); }
-.value-card__num { font-family: var(--title); font-size: 36px; color: var(--gold-40); line-height: 1; margin-bottom: var(--s4); }
+.value-card__num { font-family: var(--title); font-size: 48px; color: var(--gold-40); line-height: 1; margin-bottom: var(--s4); }
 .value-card__title { font-family: var(--title); font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy-100); margin-bottom: var(--s3); }
 .value-card__text { font-family: var(--body); font-size: 14px; line-height: 1.6; color: var(--navy-80); font-weight: 300; }
 
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); margin-top: var(--s7); }
 .team-card { text-align: center; }
-.team-card__avatar { width: 80px; height: 80px; border-radius: 50%; background: var(--sand-40); margin: 0 auto var(--s4); display: flex; align-items: center; justify-content: center; }
-.team-card__avatar svg { width: 32px; height: 32px; color: var(--gold-100); }
+.team-card__avatar { width: 120px; height: 120px; border-radius: 50%; background: var(--sand-40); margin: 0 auto var(--s4); display: flex; align-items: center; justify-content: center; }
+.team-card__avatar svg { width: 48px; height: 48px; color: var(--gold-100); }
 .team-card__name { font-family: var(--title); font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy-100); margin-bottom: var(--s2); }
 .team-card__role { font-family: var(--body); font-size: 13px; color: var(--navy-60); font-weight: 300; }
+
+.page-hero {
+  position: relative; min-height: 70vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 160px var(--s7) var(--s8);
+  color: var(--off-white); overflow: hidden;
+}
+.page-hero__bg { position: absolute; inset: 0; z-index: 0; }
+.page-hero__bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.7) saturate(1.05); }
+.page-hero__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(42,62,91,0.5) 0%, rgba(42,62,91,0.1) 40%, rgba(42,62,91,0.7) 100%); }
+.page-hero__inner { position: relative; z-index: 2; max-width: 1440px; margin: 0 auto; width: 100%; }
+.page-hero__eyebrow { font-family: var(--title); font-size: 11px; letter-spacing: 0.3em; color: var(--sand-100); margin-bottom: var(--s4); display: flex; align-items: center; gap: var(--s3); }
+.page-hero__eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--sand-100); }
+.page-hero__title { font-family: var(--title); text-transform: uppercase; font-size: clamp(48px, 8vw, 120px); line-height: 0.9; font-weight: 400; color: var(--off-white); }
+.page-hero__title em { font-style: normal; color: var(--sand-100); display: block; }
+
+.page-section { padding: 120px var(--s7) 100px; max-width: 1440px; margin: 0 auto; }
+.page-section--sand { background: var(--sand-20); }
+.page-section--navy { background: var(--navy-100); color: var(--off-white); }
+
+.page-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s8); align-items: start; }
+
+.page-eyebrow { font-family: var(--title); font-size: 11px; letter-spacing: 0.24em; color: var(--gold-100); margin-bottom: var(--s4); display: flex; align-items: center; gap: var(--s3); }
+.page-eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--gold-100); }
+.page-title { font-family: var(--title); text-transform: uppercase; font-size: clamp(36px, 5vw, 72px); line-height: 0.92; color: var(--navy-100); font-weight: 400; margin-bottom: var(--s6); }
+.page-title em { font-style: normal; color: var(--gold-100); }
+.page-lead { font-family: var(--title); font-size: 20px; line-height: 1.4; color: var(--navy-100); text-transform: uppercase; letter-spacing: 0.01em; margin-bottom: var(--s5); max-width: 600px; }
+.page-body { font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.7; color: var(--navy-80); max-width: 600px; }
+.page-body p { margin-bottom: var(--s4); }
+
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); margin-top: var(--s7); }
+.value-card { padding: var(--s6); background: var(--off-white); border-radius: var(--r-card); }
+.value-card__num { font-family: var(--title); font-size: 48px; color: var(--gold-40); line-height: 1; margin-bottom: var(--s4); }
+.value-card__title { font-family: var(--title); font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy-100); margin-bottom: var(--s3); }
+.value-card__text { font-family: var(--body); font-size: 14px; line-height: 1.6; color: var(--navy-80); font-weight: 300; }
+
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s6); margin-top: var(--s7); }
+.team-card { text-align: center; }
+.team-card__avatar { width: 120px; height: 120px; border-radius: 50%; background: var(--sand-40); margin: 0 auto var(--s4); display: flex; align-items: center; justify-content: center; }
+.team-card__avatar svg { width: 48px; height: 48px; color: var(--gold-100); }
+.team-card__name { font-family: var(--title); font-size: 16px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--navy-100); margin-bottom: var(--s2); }
+.team-card__role { font-family: var(--body); font-size: 13px; color: var(--navy-60); font-weight: 300; }
+
+.exp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5); margin-top: var(--s7); }
+.exp-card { border-radius: var(--r-card); overflow: hidden; position: relative; aspect-ratio: 3/4; }
+.exp-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.exp-card:hover img { transform: scale(1.05); }
+.exp-card__body { position: absolute; bottom: 0; left: 0; right: 0; padding: var(--s6) var(--s5); background: linear-gradient(to top, rgba(42,62,91,0.85) 0%, transparent 100%); color: var(--off-white); }
+.exp-card__tag { font-family: var(--title); font-size: 10px; letter-spacing: 0.2em; color: var(--sand-100); margin-bottom: var(--s2); text-transform: uppercase; }
+.exp-card__name { font-family: var(--title); font-size: clamp(20px, 2.5vw, 28px); text-transform: uppercase; line-height: 1; font-weight: 400; }
+.exp-card__desc { font-family: var(--body); font-size: 13px; line-height: 1.5; color: rgba(255,255,255,0.8); margin-top: var(--s3); font-weight: 300; }
+
+.dest-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s5); margin-top: var(--s7); }
+.dest-stat { text-align: center; padding: var(--s6); }
+.dest-stat__val { font-family: var(--title); font-size: clamp(32px, 4vw, 56px); color: var(--navy-100); line-height: 1; margin-bottom: var(--s2); }
+.dest-stat__lbl { font-family: var(--title); font-size: 10px; letter-spacing: 0.2em; color: var(--gold-100); text-transform: uppercase; }
+
+@media (max-width: 1180px) {
+  .nav__login { display: none; }
+}
+@media (max-width: 780px) {
+  .nav__logo-img { height: 40px; }
+}
+
+@media (max-width: 768px) { .dest-stats { grid-template-columns: repeat(2, 1fr); } .exp-grid, .values-grid, .team-grid { grid-template-columns: 1fr; } }
 
 
 
@@ -269,14 +334,6 @@ ul { list-style: none; }
 
 
 /* TABLET */
-
-@media (max-width: 1180px) {
-  .nav__login { display: none; }
-}
-@media (max-width: 780px) {
-  .nav__logo-img { height: 40px; }
-}
-
 @media (max-width: 1024px) {
   .nav__menu { display: none; }
   .nav__lang { display: none; }
@@ -373,48 +430,117 @@ ul { list-style: none; }
 
 
 
-<header class="page-hero">
-  <div class="page-hero__bg">
-    <img src="images/taiba/sunset-coqueiros-lg.jpg" alt="Pôr do sol entre coqueiros na Taíba" />
-  </div>
-  <div class="page-hero__inner">
-    <div class="page-hero__eyebrow">SOBRE NÓS</div>
-    <h1 class="page-hero__title reveal">Uma nova forma<br/><em>de viver o litoral.</em></h1>
-  </div>
-</header>
+<style>
+.filtro { display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end; margin-top:var(--s6); background:var(--off-white); border:1px solid var(--navy-10); border-radius:var(--r-card); padding:18px; box-shadow:0 10px 30px rgba(42,62,91,.06); }
+.filtro__campo { display:flex; flex-direction:column; gap:6px; flex:1 1 150px; }
+.filtro__lbl { font-family:var(--title); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--navy-60); }
+.filtro__input { font-family:var(--body); font-size:14px; color:var(--navy-100); padding:12px 14px; border:1px solid var(--navy-20); border-radius:12px; background:#fff; }
+.filtro__btn { font-family:var(--title); font-size:11px; letter-spacing:.2em; text-transform:uppercase; background:var(--navy-100); color:var(--off-white); border:0; border-radius:var(--r-pill); padding:16px 28px; cursor:pointer; transition:background .25s; }
+.filtro__btn:hover { background:var(--gold-100); }
+.casas-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--s6); margin-top:var(--s6); }
+.casa-item { background:var(--off-white); border:1px solid var(--navy-10); border-radius:var(--r-card); overflow:hidden; display:flex; flex-direction:column; }
+.casa-item__media { display:block; aspect-ratio:16/10; overflow:hidden; }
+.casa-item__media img { width:100%; height:100%; object-fit:cover; transition:transform .5s; }
+.casa-item:hover .casa-item__media img { transform:scale(1.03); }
+.casa-item__body { padding:var(--s6); display:flex; flex-direction:column; gap:10px; flex:1; }
+.casa-item__eyebrow { font-family:var(--title); font-size:10px; letter-spacing:.2em; color:var(--gold-100); }
+.casa-item__name { font-family:var(--title); font-size:24px; text-transform:uppercase; letter-spacing:.04em; color:var(--navy-100); }
+.casa-item__desc { font-family:var(--body); font-size:14px; color:var(--navy-80); font-weight:300; line-height:1.6; }
+.casa-item__chips { display:flex; flex-wrap:wrap; gap:8px; }
+.casa-item__chips span { font-family:var(--body); font-size:12px; color:var(--navy-80); border:1px solid var(--navy-20); border-radius:999px; padding:6px 12px; }
+.casa-item__actions { margin-top:auto; display:flex; gap:14px; align-items:center; padding-top:6px; }
+.casa-item__link { font-family:var(--title); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--navy-100); }
+.casa-item__link:hover { color:var(--gold-100); }
+.casa-item__btn { font-family:var(--title); font-size:11px; letter-spacing:.18em; text-transform:uppercase; background:var(--navy-100); color:var(--off-white); border-radius:var(--r-pill); padding:12px 22px; transition:background .25s; }
+.casa-item__btn:hover { background:var(--gold-100); color:var(--off-white); }
+.filtro__nota { font-family:var(--body); font-size:14px; color:var(--navy-80); margin-top:var(--s5); }
+@media (max-width: 860px) { .casas-grid { grid-template-columns:1fr; } }
+</style>
 
-<section class="page-section">
-  <div class="page-grid">
-    <div>
-      <div class="page-eyebrow">HOME &amp; VILLAS</div>
-      <h2 class="page-title reveal">Casas com<br/><em>curadoria.</em></h2>
+<section class="page-section" style="padding-top:170px; padding-bottom:40px;">
+  <div class="page-eyebrow">HOSPEDAGEM NA TAÍBA</div>
+  <h1 class="page-title reveal">Onde você<br/><em>quer ficar.</em></h1>
+  <form class="filtro reveal" id="filtro" action="reservas.html" method="get">
+    <div class="filtro__campo">
+      <label class="filtro__lbl" for="fLugar">Onde</label>
+      <select class="filtro__input" id="fLugar" name="lugar"><option value="taiba">Taíba</option></select>
     </div>
-    <div>
-      <p class="page-lead">Casas escolhidas na Taíba, com arquitetura integrada à natureza, concierge dedicado e a calma de quem conhece cada vento desta costa.</p>
-      <div class="page-body">
-        <p>A Home &amp; Villas nasceu dentro da Monte Dourado, incorporadora do litoral cearense, como o braço que cuida de quem vem passar uns dias aqui. Cada casa entra no portfólio pela arquitetura, pela localização e pelo que ela oferece a quem chega.</p>
-        <p>Estamos na Taíba, a uma hora de Fortaleza pela CE-085, entre a praia de pescadores, as dunas e as lagoas de água doce. O dia começa cedo, o vento chega à tarde e o pôr do sol acontece nas eólicas.</p>
-        <p>A equipe que recebe você é daqui. São as pessoas da Taíba que cuidam da casa, do café da manhã e das experiências que a gente organiza, e é isso que dá a esta operação o jeito do lugar.</p>
-      </div>
+    <div class="filtro__campo">
+      <label class="filtro__lbl" for="fIn">Check-in</label>
+      <input class="filtro__input" type="date" id="fIn" name="checkin" />
     </div>
-  </div>
+    <div class="filtro__campo">
+      <label class="filtro__lbl" for="fOut">Check-out</label>
+      <input class="filtro__input" type="date" id="fOut" name="checkout" />
+    </div>
+    <div class="filtro__campo">
+      <label class="filtro__lbl" for="fHosp">Hóspedes</label>
+      <select class="filtro__input" id="fHosp" name="hospedes"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select>
+    </div>
+    <button class="filtro__btn" type="submit">Ver disponibilidade</button>
+  </form>
 </section>
 
-<section class="page-section page-section--sand">
-  <div class="page-grid">
-    <div>
-      <div class="page-eyebrow">BY MONTE DOURADO</div>
-      <h2 class="page-title reveal">A marca por trás<br/><em>de cada casa.</em></h2>
-    </div>
-    <div>
-      <div class="page-body">
-        <p>A Monte Dourado é a incorporadora que cria refúgios para quem vive o esporte e a natureza no litoral do Ceará. É dela o Vila do Chapéu, o condomínio no Morro do Chapéu onde ficam as nossas primeiras casas.</p>
-        <p>Quando você reserva com a Home &amp; Villas, a sua estadia está apoiada nessa estrutura: manutenção, limpeza, segurança do condomínio e um time dedicado ao litoral cearense.</p>
+<section class="page-section" style="padding-top:0;">
+  <div class="casas-grid">
+    <article class="casa-item reveal" data-max="6">
+      <a class="casa-item__media" href="casa-zama.html"><img src="images/casa-zama/fachada-principal.jpg" alt="Casa Zamá" /></a>
+      <div class="casa-item__body">
+        <div class="casa-item__eyebrow">TAÍBA · VILA DO CHAPÉU</div>
+        <div class="casa-item__name">Casa Zamá</div>
+        <p class="casa-item__desc">Uma casa baixa de linhas limpas, cobogós artesanais e piscina de borda contínua, a alguns minutos do vento de Taíba.</p>
+        <div class="casa-item__chips"><span>3 suítes</span><span>6 hóspedes</span><span>Café da manhã incluso</span></div>
+        <div class="casa-item__actions">
+          <a class="casa-item__btn js-reservar" data-casa="casa-zama" href="reservas.html?casa=casa-zama">Reservar</a>
+          <a class="casa-item__link" href="casa-zama.html">Conhecer a casa</a>
+        </div>
       </div>
-    </div>
+    </article>
+    <article class="casa-item reveal" data-max="12">
+      <a class="casa-item__media" href="vila-vento.html"><img src="images/vila-vento/piscina-area-comum-lg.jpg" alt="Vila Vento" /></a>
+      <div class="casa-item__body">
+        <div class="casa-item__eyebrow">TAÍBA · VILA DO CHAPÉU</div>
+        <div class="casa-item__name">Vila Vento</div>
+        <p class="casa-item__desc">Quatro bangalôs independentes em volta de uma área comum com cozinha, estar e piscina.</p>
+        <div class="casa-item__chips"><span>4 bangalôs</span><span>12 hóspedes</span><span>Café da manhã à la carte</span></div>
+        <div class="casa-item__actions">
+          <a class="casa-item__btn js-reservar" data-casa="vila-vento" href="reservas.html?casa=vila-vento">Reservar</a>
+          <a class="casa-item__link" href="vila-vento.html">Conhecer a casa</a>
+        </div>
+      </div>
+    </article>
   </div>
+  <p class="filtro__nota" id="filtroNota" style="display:none">Para mais de 6 hóspedes, a casa certa é o Vila Vento: os quatro bangalôs juntos recebem até 12.</p>
 </section>
 
+<script>
+(function(){
+  var hosp=document.getElementById('fHosp');
+  var nota=document.getElementById('filtroNota');
+  function aplica(){
+    var n=parseInt(hosp.value,10);
+    document.querySelectorAll('.casa-item').forEach(function(c){
+      c.style.display = (n<=parseInt(c.getAttribute('data-max'),10)) ? '' : 'none';
+    });
+    if(nota) nota.style.display = n>6 ? '' : 'none';
+  }
+  hosp.addEventListener('change',aplica);
+  function params(extra){
+    var q=new URLSearchParams();
+    var ci=document.getElementById('fIn').value, co=document.getElementById('fOut').value;
+    if(ci)q.set('checkin',ci); if(co)q.set('checkout',co);
+    q.set('hospedes',hosp.value);
+    if(extra)q.set('casa',extra);
+    return q.toString();
+  }
+  document.querySelectorAll('.js-reservar').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      location.href='reservas.html?'+params(a.getAttribute('data-casa'));
+    });
+  });
+})();
+</script>
 
 <footer class="footer">
   <div class="footer__inner">

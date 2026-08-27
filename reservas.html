@@ -340,6 +340,9 @@ ul { list-style: none; }
 
 /* seletor de idioma dentro do menu mobile */
 .mobile-menu .nav__lang { display: inline-flex; align-self: flex-start; }
+
+/* menu padronizado com a home: caixa alta */
+.nav__menu a { font-family: var(--title); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; }
 </style>
 </head>
 <body>
@@ -351,7 +354,7 @@ ul { list-style: none; }
   </a>
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
-    <li><a href="casa-zama.html">As casas</a></li>
+    <li><a href="casas.html">As casas</a></li>
     <li><a href="destino-taiba.html">Taíba</a></li>
     <li><a href="experiencias.html">Serviços</a></li>
     <li><a href="sobre.html">Sobre</a></li>
@@ -380,7 +383,7 @@ ul { list-style: none; }
     </button>
     <div class="mobile-menu__links">
       <a href="index.html">Início</a>
-      <a href="casa-zama.html">As casas</a>
+      <a href="casas.html">As casas</a>
       <a href="destino-taiba.html">Taíba</a>
       <a href="experiencias.html">Serviços</a>
       <a href="sobre.html">Sobre</a>
@@ -544,6 +547,11 @@ ul { list-style: none; }
       if (ok) { ok.style.display = 'block'; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
     }
     var casa = q.get('casa'), bangalo = q.get('bangalo');
+    var ci = q.get('checkin'), co = q.get('checkout'), ho = q.get('hospedes');
+    var eCi = document.getElementById('checkin'); if (eCi && ci) eCi.value = ci;
+    var eCo = document.getElementById('checkout'); if (eCo && co) eCo.value = co;
+    var eAd = document.getElementById('adultos'); if (eAd && ho) eAd.value = ho;
+    if (!casa && ho && parseInt(ho, 10) > 6) casa = 'vila-vento';
     var sel = document.getElementById('casa');
     if (sel && casa) {
       var alvo = '';
@@ -573,7 +581,7 @@ ul { list-style: none; }
     <div class="footer__col">
       <h4 class="footer__col-title">NAVEGAÇÃO</h4>
       <ul>
-        <li><a href="index.html#villas">Casas</a></li>
+        <li><a href="casas.html">Casas</a></li>
         <li><a href="destino-taiba.html">Taíba</a></li>
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
@@ -649,6 +657,6 @@ if(hamburger){
   // o dominio proprio ainda nao aponta para a Vercel: o retorno do FormSubmit segue o dominio em uso
   (function(){var n=document.getElementById('formNext'); if(n) n.value = location.origin + '/reservas.html?enviado=1';})();
 </script>
-<script src="i18n.js?v=20260827b"></script>
+<script src="i18n.js?v=20260827c"></script>
 </body>
 </html>
