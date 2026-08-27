@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contato · Home & Villas</title>
-<meta name="description" content="Entre em contato com a Home & Villas — reservas, anúncios e parcerias no litoral cearense." />
+<title>Reservas · Home &amp; Villas</title>
+<meta name="description" content="Reserve a Casa Zamá ou um bangalô do Vila Vento, na Taíba. Conte as datas e o que você quer viver, e o concierge da Home &amp; Villas cuida do resto." />
 <link rel="icon" href="images/brand/simbolo-azul.svg" />
 <link rel="stylesheet" href="https://use.typekit.net/gmt8jav.css">
 <style>
@@ -12,6 +12,17 @@
 @font-face{font-family:'Marisa';src:url(fonts/Marisa.otf) format('opentype');font-weight:400;font-display:swap;}
 @font-face{font-family:'Marisa';src:url(fonts/Marisa-Medium.otf) format('opentype');font-weight:500 700;font-display:swap;}
 @font-face{font-family:'Cabinet Grotesk';src:url(fonts/CabinetGrotesk-Variable.woff2) format('woff2');font-weight:100 900;font-display:swap;}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 900px) { .form-row { grid-template-columns: 1fr; } }
+.form-hint { font-family: var(--body); font-size: 12px; margin-top: 4px; color: var(--navy-60); font-weight: 300; line-height: 1.5; }
+.form-ok { display: none; padding: var(--s5); border-radius: var(--r-card); background: var(--sand-20); border: 1px solid var(--sand-100); margin-bottom: var(--s6); }
+.form-ok__t { font-family: var(--title); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--navy-100); margin-bottom: var(--s2); }
+
+.exp-check { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px 16px; margin-top: 4px; }
+@media (max-width: 640px) { .exp-check { grid-template-columns: 1fr; } }
+.exp-check label { display: flex; align-items: center; gap: 9px; font-family: var(--body); font-weight: 300; font-size: 14px; color: var(--navy-80); cursor: pointer; }
+.exp-check input { accent-color: var(--gold-100); width: 15px; height: 15px; }
 </style>
 <style>
 :root {
@@ -339,17 +350,16 @@ ul { list-style: none; }
     <li><a href="index.html">Início</a></li>
     <li><a href="casa-zama.html">As casas</a></li>
     <li><a href="destino-taiba.html">Taíba</a></li>
+    <li><a href="experiencias.html">Serviços</a></li>
     <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="experiencias.html">Experiências</a></li>
     <li><a href="alugue-com-a-gente.html" class="nav__cta">Sua casa</a></li>
-    <li><a href="contato.html">Contato</a></li>
   </ul>
   <div class="nav__actions">
     <button class="nav__lang" aria-label="Idioma">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
       PT
     </button>
-    <a href="contato.html" class="nav__login">
+    <a href="reservas.html" class="nav__login">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
       Reservar
     </a>
@@ -359,55 +369,122 @@ ul { list-style: none; }
 
 <header class="page-hero" style="min-height: 50vh;">
   <div class="page-hero__bg">
-    <img src="images/taiba/aereo-eolicas-lg.jpg" alt="Vista aérea da Taíba" />
+    <img src="images/casa-zama/piscina-aerea-lg.jpg" alt="Piscina da Casa Zamá vista de cima" />
   </div>
   <div class="page-hero__inner">
-    <div class="page-hero__eyebrow">CONTATO</div>
-    <h1 class="page-hero__title reveal">Fale<br/><em>conosco.</em></h1>
+    <div class="page-hero__eyebrow">RESERVAS</div>
+    <h1 class="page-hero__title reveal">Reserve<br/><em>a sua estadia.</em></h1>
   </div>
 </header>
 
 <section class="page-section">
   <div class="page-grid">
     <div>
-      <div class="page-eyebrow">ENTRE EM CONTATO</div>
-      <h2 class="page-title reveal">Estamos<br/><em>aqui.</em></h2>
+      <div class="page-eyebrow">FALE COM O CONCIERGE</div>
+      <h2 class="page-title reveal">Conte as suas<br/><em>datas.</em></h2>
+    </div>
+    <div>
       <div class="page-body">
-        <p>Quer reservar uma home, anunciar seu imóvel ou saber mais sobre nossos empreendimentos? Preencha o formulário ou entre em contato pelos canais abaixo.</p>
+        <p>Diga quando você quer vir, quantas pessoas são e em qual casa você pensou. O concierge confirma a disponibilidade, envia os valores e já deixa combinado o que você quiser encontrar pronto na chegada.</p>
       </div>
     </div>
-    <div></div>
+  </div>
+
+  <div class="form-ok" id="formOk">
+    <div class="form-ok__t">Pedido enviado</div>
+    <p class="form-hint">Recebemos o seu pedido de reserva. O concierge da Home &amp; Villas responde em até um dia útil.</p>
   </div>
 
   <div class="contact-grid">
-    <div class="contact-form">
+    <form class="contact-form" action="https://formsubmit.co/contato@mdhomevillas.com" method="POST">
+      <!-- FormSubmit precisa ser ativado uma vez: o primeiro envio dispara um e-mail de confirmacao -->
+      <input type="hidden" name="_subject" value="Reservas · novo pedido pelo site" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://mdhomevillas.com/reservas.html?enviado=1" />
+      <input type="text" name="_honey" style="display:none" />
+
       <div class="form-group">
-        <label class="form-label">Nome completo</label>
-        <input type="text" class="form-input" placeholder="Seu nome" />
+        <label class="form-label" for="nome">Nome completo</label>
+        <input id="nome" name="Nome" type="text" class="form-input" placeholder="Seu nome" required />
       </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input id="email" name="E-mail" type="email" class="form-input" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tel">Telefone</label>
+          <input id="tel" name="Telefone" type="tel" class="form-input" placeholder="(00) 00000-0000" required />
+        </div>
+      </div>
+
       <div class="form-group">
-        <label class="form-label">E-mail</label>
-        <input type="email" class="form-input" placeholder="seu@email.com" />
+        <label class="form-label" for="casa">Onde você quer ficar</label>
+        <select id="casa" name="Casa" class="form-input" required>
+          <option value="">Selecione a casa</option>
+          <option value="Casa Zamá">Casa Zamá · casa inteira, até 6 hóspedes</option>
+          <option value="Vila Vento · Bangalô Brisa">Vila Vento · Bangalô Brisa, até 3 hóspedes</option>
+          <option value="Vila Vento · Bangalô Duna">Vila Vento · Bangalô Duna, até 3 hóspedes</option>
+          <option value="Vila Vento · villa inteira">Vila Vento · os quatro bangalôs, até 12 hóspedes</option>
+          <option value="Ainda não sei">Ainda não sei, quero uma sugestão</option>
+        </select>
       </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="checkin">Check-in</label>
+          <input id="checkin" name="Check-in" type="date" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="checkout">Check-out</label>
+          <input id="checkout" name="Check-out" type="date" class="form-input" required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="adultos">Adultos</label>
+          <input id="adultos" name="Adultos" type="number" min="1" max="12" value="2" class="form-input" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="criancas">Crianças</label>
+          <input id="criancas" name="Crianças" type="number" min="0" max="12" value="0" class="form-input" />
+        </div>
+      </div>
+
       <div class="form-group">
-        <label class="form-label">Telefone / WhatsApp</label>
-        <input type="tel" class="form-input" placeholder="(85) 98148-8365" />
+        <label class="form-label">O que você quer deixar combinado</label>
+        <div class="exp-check">
+          <label><input type="checkbox" name="Interesse" value="Transfer do aeroporto" /> Transfer do aeroporto</label>
+          <label><input type="checkbox" name="Interesse" value="Carro, quadriciclo ou buggy" /> Carro, quadriciclo ou buggy</label>
+          <label><input type="checkbox" name="Interesse" value="Compras de mercado" /> Compras de mercado</label>
+          <label><input type="checkbox" name="Interesse" value="Equipe de casa para almoço" /> Equipe de casa para almoço</label>
+          <label><input type="checkbox" name="Interesse" value="Aula de surf" /> Aula de surf</label>
+          <label><input type="checkbox" name="Interesse" value="Aula de kitesurf" /> Aula de kitesurf</label>
+          <label><input type="checkbox" name="Interesse" value="Aula de skate" /> Aula de skate</label>
+          <label><input type="checkbox" name="Interesse" value="Passeio de quadriciclo" /> Passeio de quadriciclo</label>
+          <label><input type="checkbox" name="Interesse" value="Chef para almoço ou jantar" /> Chef para almoço ou jantar</label>
+          <label><input type="checkbox" name="Interesse" value="Assado de peixe" /> Assado de peixe</label>
+          <label><input type="checkbox" name="Interesse" value="Aula de yoga" /> Aula de yoga</label>
+          <label><input type="checkbox" name="Interesse" value="Massagem em casa" /> Massagem em casa</label>
+        </div>
+        <p class="form-hint">Cada serviço e experiência tem valor à parte da diária. O concierge envia os valores junto com a confirmação.</p>
       </div>
+
       <div class="form-group">
-        <label class="form-label">Assunto</label>
-        <input type="text" class="form-input" placeholder="Reserva, anúncio, parceria..." />
+        <label class="form-label" for="msg">Mensagem</label>
+        <textarea id="msg" name="Mensagem" class="form-textarea" placeholder="Aniversário, viagem em família, primeira vez na Taíba: conte o que for ajudar a gente a receber você bem."></textarea>
       </div>
-      <div class="form-group">
-        <label class="form-label">Mensagem</label>
-        <textarea class="form-textarea" placeholder="Como podemos ajudar?"></textarea>
-      </div>
-      <button class="form-btn" type="button">Enviar mensagem</button>
-    </div>
+
+      <button class="form-btn" type="submit">Enviar pedido de reserva</button>
+    </form>
+
     <div class="contact-info">
       <div class="info-card">
-        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-        <div class="info-card__title">WhatsApp</div>
-        <div class="info-card__text">Fale diretamente com nosso concierge.<br/><a href="#">(85) 98148-8365</a></div>
+        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div class="info-card__title">O que acontece depois</div>
+        <div class="info-card__text">O concierge confirma a disponibilidade, envia os valores e abre uma conversa com você até a chegada.</div>
       </div>
       <div class="info-card">
         <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -416,27 +493,50 @@ ul { list-style: none; }
       </div>
       <div class="info-card">
         <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
-        <div class="info-card__title">Localização</div>
-        <div class="info-card__text">Taíba, São Gonçalo do Amarante — CE<br/>Litoral Oeste do Ceará<br/>1h de Fortaleza</div>
+        <div class="info-card__title">Onde estamos</div>
+        <div class="info-card__text">Taíba, São Gonçalo do Amarante, Ceará<br/>Uma hora de Fortaleza pela CE-085</div>
       </div>
       <div class="info-card">
-        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-        <div class="info-card__title">Instagram</div>
-        <div class="info-card__text"><a href="#">@monte.dourado</a></div>
+        <svg class="info-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10h-4a6 6 0 1 1-6-6z"/><circle cx="12" cy="12" r="2"/></svg>
+        <div class="info-card__title">Já é hóspede</div>
+        <div class="info-card__text">Alguma coisa não saiu como você esperava? Escreva para <a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a> e a nossa equipe cuida disso.</div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    if (q.get('enviado')) {
+      var ok = document.getElementById('formOk');
+      if (ok) { ok.style.display = 'block'; ok.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    }
+    var casa = q.get('casa'), bangalo = q.get('bangalo');
+    var sel = document.getElementById('casa');
+    if (sel && casa) {
+      var alvo = '';
+      if (casa === 'casa-zama') alvo = 'Casa Zamá';
+      if (casa === 'vila-vento') {
+        alvo = 'Vila Vento · villa inteira';
+        if (bangalo === 'brisa') alvo = 'Vila Vento · Bangalô Brisa';
+        if (bangalo === 'duna') alvo = 'Vila Vento · Bangalô Duna';
+      }
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === alvo) { sel.selectedIndex = i; break; }
+      }
+    }
+  })();
+</script>
 
 
 <footer class="footer">
   <div class="footer__inner">
     <div class="footer__brand">
       <img src="images/brand/hv-horizontal-completa-azul.png" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
-      <p class="footer__desc">Hospedagem por temporada no litoral cearense, por Monte Dourado. Arquitetura, natureza e curadoria em cada villa.</p>
+      <p class="footer__desc">Casas com curadoria no litoral do Ceará, por Monte Dourado. Arquitetura, natureza e cuidado em cada casa.</p>
       <div class="footer__social">
         <a href="https://www.instagram.com/monte.dourado" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-        <a href="https://wa.me/5585981488365" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
       </div>
     </div>
     <div class="footer__col">
@@ -452,7 +552,7 @@ ul { list-style: none; }
     <div class="footer__col">
       <h4 class="footer__col-title">SUPORTE</h4>
       <ul>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
         <li><a href="#">Política de privacidade</a></li>
         <li><a href="#">Termos de uso</a></li>
         <li><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></li>
@@ -514,6 +614,6 @@ if(hamburger){
   setTimeout(tone,300);
 })();
 </script>
-<script src="i18n.js"></script>
+<script src="i18n.js?v=20260827"></script>
 </body>
 </html>

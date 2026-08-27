@@ -601,6 +601,8 @@ input { font: inherit; }
   transition: transform 1s cubic-bezier(.2,.8,.3,1);
 }
 .suite:hover .suite__media img { transform: scale(1.06); }
+.suite__cta { display:inline-block; margin-top:10px; font-family: var(--title); font-size: 10.5px; letter-spacing:.18em; text-transform:uppercase; color: var(--gold-100); border:1px solid var(--gold-40); border-radius: var(--r-pill); padding: 9px 18px; text-decoration:none; transition: background .2s, color .2s; }
+.suite__cta:hover { background: var(--gold-100); color: var(--off-white); border-color: var(--gold-100); }
 .suite__name {
   font-family: var(--title);
   font-size: 14px;
@@ -1188,12 +1190,11 @@ input { font: inherit; }
     <li><a href="index.html">Início</a></li>
     <li><a href="casa-zama.html">As casas</a></li>
     <li><a href="destino-taiba.html">Taíba</a></li>
+    <li><a href="experiencias.html">Serviços</a></li>
     <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="experiencias.html">Experiências</a></li>
     <li><a href="alugue-com-a-gente.html" class="nav__cta">Sua casa</a></li>
-    <li><a href="contato.html">Contato</a></li>
   </ul>
-  <a href="contato.html" class="nav__login">
+  <a href="reservas.html" class="nav__login">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
     Reservar
   </a>
@@ -1209,13 +1210,12 @@ input { font: inherit; }
       <a href="index.html">Início</a>
       <a href="casa-zama.html">As casas</a>
       <a href="destino-taiba.html">Taíba</a>
+      <a href="experiencias.html">Serviços</a>
       <a href="sobre.html">Sobre</a>
-      <a href="experiencias.html">Experiências</a>
-      <a href="contato.html">Contato</a>
+      <a href="alugue-com-a-gente.html">Sua casa</a>
     </div>
     <div class="mobile-menu__cta">
-      <a href="contato.html" class="btn-primary">Reservar</a>
-      <a href="https://wa.me/5585981488365" target="_blank" class="btn-secondary">WhatsApp</a>
+      <a href="reservas.html" class="btn-primary">Reservar</a>
     </div>
   </div>
 </div>
@@ -1229,7 +1229,7 @@ input { font: inherit; }
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 6 6 6-6 6"/></svg>
     <a href="index.html#villas">As casas</a>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 6 6 6-6 6"/></svg>
-    <a href="vila-do-chapeu.html">Vila do Chapéu</a>
+    <a href="#condominio">Vila do Chapéu</a>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 6 6 6-6 6"/></svg>
     <strong>CASA ZAMÁ</strong>
   </nav>
@@ -1241,7 +1241,7 @@ input { font: inherit; }
       <div class="page__meta">
         <span class="page__meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12M9 21v-7h6v7"/></svg>
-          <a href="vila-do-chapeu.html">Vila do Chapéu</a>
+          <a href="#condominio">Vila do Chapéu</a>
         </span>
         <span class="page__meta-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
@@ -1276,7 +1276,7 @@ input { font: inherit; }
       <section class="summary">
         <div class="summary__host">
           <div class="summary__host-title">
-            Villa inteira hospedada por <em>Home & Villas</em>
+            Bangalôs independentes, hospedados por <em>Home &amp; Villas</em>
           </div>
           <div class="summary__avatar">
             <div>
@@ -1303,7 +1303,7 @@ input { font: inherit; }
             </div>
             <div>
               <div class="highlight__t">Transfer sob consulta</div>
-              <p class="highlight__d">Organizamos a busca no Aeroporto de Fortaleza, ida e volta, em veículo preparado para o terreno.</p>
+              <p class="highlight__d">Organizamos a busca no Aeroporto de Fortaleza, ida e volta, com cadeirinha de bebê quando precisar.</p>
             </div>
           </div>
           <div class="highlight">
@@ -1312,7 +1312,7 @@ input { font: inherit; }
             </div>
             <div>
               <div class="highlight__t">Concierge dedicado</div>
-              <p class="highlight__d">Do jantar com chef privado ao aluguel de prancha de kite: a equipe local cuida dos pedidos da estadia.</p>
+              <p class="highlight__d">Uma pessoa cuida de você durante toda a estadia, do primeiro café ao último pedido antes do voo.</p>
             </div>
           </div>
           <div class="highlight">
@@ -1329,19 +1329,25 @@ input { font: inherit; }
 
       <!-- Descrição -->
       <section>
-        <h2 class="content__title">Sobre esta villa</h2>
+        <h2 class="content__title">Sobre o Vila Vento</h2>
         <p class="desc__lead">
-          Bem-vindo ao Vila Vento, um espaço para proporcionar uma experiência de hospedagem
-          com conforto e tranquilidade.
+          Quatro bangalôs independentes em volta de uma piscina, para quem quer a casa
+          só sua sem abrir mão da conversa no fim da tarde.
         </p>
         <div class="desc__body">
           <p>
-            A propriedade dispõe de 4 bangalôs independentes, cada um acomodando confortavelmente
-            até 3 hóspedes, além de uma agradável área comum compartilhada, com cozinha, estar e
-            piscina, ideal para momentos de convivência em meio à natureza.
+            Cada bangalô recebe até três hóspedes e tem entrada própria, ar-condicionado,
+            frigobar e TV. Em volta deles ficam a área comum com cozinha, o estar coberto
+            em palha e a piscina, onde os dias começam e terminam.
           </p>
           <p>
-            Acomodamos até 12 hóspedes no total.
+            A reserva é feita por bangalô. Você escolhe a tipologia
+            que prefere e, se vier em grupo, pode ficar com os quatro. No total, o Vila Vento
+            acomoda 12 hóspedes.
+          </p>
+          <p>
+            O café da manhã é à la carte: cada hóspede pede na hora o que quer comer,
+            servido na área comum.
           </p>
           <p>
             O Vila Vento fica no condomínio <strong>Vila do Chapéu</strong>, no Morro do Chapéu,
@@ -1369,18 +1375,23 @@ input { font: inherit; }
       <section>
         <h2 class="content__title">Extras sob consulta</h2>
         <ul class="amens">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-6 4 12 2-9 2 6h5"/></svg> Equipamento de kite</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17h18M5 17V9l7-4 7 4v8M9 17v-4h6v4"/></svg> Transfer do aeroporto de Fortaleza</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v5M9 5h6M6 21h12l-1-9H7z"/></svg> Chef particular</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 14c4-2 6 2 10 0s6-2 10 0M4 10c3-1 5 1 8 0s5-1 8 0"/></svg> Peixe assado na casa</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17h5l3-7h5"/></svg> Passeio de quadriciclo</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18h18l-2 3H5zM5 15V8l7-5v12M12 15h7l-2-4h-5"/></svg> Passeio de barco e pesca</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-6 4 12 2-9 2 6h5"/></svg> Aula de kitesurf</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17h18M5 17V9l7-4 7 4v8M9 17v-4h6v4"/></svg> Transfer do Aeroporto de Fortaleza</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l2-6h14l2 6v5h-3M6 18H3v-5M3 13h18"/><circle cx="7.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg> Carro, quadriciclo ou buggy</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7zM9 7V5a3 3 0 0 1 6 0v2"/></svg> Compras de mercado antes da chegada</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3l7 7-9 9H5v-7l9-9zM12 5l7 7"/></svg> Limpeza extra durante a hospedagem</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6M3 15h18M6 9V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg> Troca de enxoval fora do calendário</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 18c4-2 6 2 10 0s6-2 10 0M7 15c2-6 6-10 11-11-1 5-5 9-11 11z"/></svg> Aula de surf</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="13" r="4"/><path d="M2 19h20M12 5v3M5 8l2 2M19 8l-2 2"/></svg> Experiência de pôr do sol</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-6 4 12 2-9 2 6h5"/></svg> Aula de kitesurf</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 10h18l-2 4H5l-2-4z"/><circle cx="8" cy="17" r="1.8"/><circle cx="16" cy="17" r="1.8"/></svg> Aula de skate</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17h5l3-7h5"/></svg> Passeio de quadriciclo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 21h10M6 10a3 3 0 1 1 3-4 3.5 3.5 0 0 1 6 0 3 3 0 1 1 3 4v6H6v-6z"/></svg> Chef para almoço ou jantar</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 14c4-2 6 2 10 0s6-2 10 0M4 10c3-1 5 1 8 0s5-1 8 0"/></svg> Assado de peixe na casa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="4.5" r="2"/><path d="M12 6.5v6M12 12.5 6 17M12 12.5 18 17M7 12h10"/></svg> Aula de yoga</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 16c2-5 6-8 8-8s6 3 8 8"/><path d="M3 20h18"/><circle cx="12" cy="6" r="2"/></svg> Massagem em casa</li>
         </ul>
         <p class="highlight__d" style="margin-top:var(--s4);">
-          Pedidos e reservas dos extras direto com o concierge Home &amp; Villas.
+          Cada extra tem valor à parte da diária e é reservado com o concierge Home &amp; Villas.
+          <a href="experiencias.html" style="color:var(--gold-100); text-decoration:underline;">Ver serviços e experiências</a>.
         </p>
       </section>
 
@@ -1388,22 +1399,25 @@ input { font: inherit; }
       <section>
         <h2 class="content__title">Onde você vai dormir</h2>
         <p class="desc__lead" style="margin-bottom:var(--s5);">
-          São quatro bangalôs em duas tipologias, dois de cada. A escolha acontece na reserva.
+          São quatro bangalôs em duas tipologias, dois de cada. A reserva é feita
+          por bangalô, e você escolhe a tipologia na hora de reservar.
         </p>
         <div class="suites" style="grid-template-columns:repeat(2,1fr);">
           <article class="suite">
-            <div class="suite__media">
-              <img src="images/vila-vento/suite-brise.jpg" alt="Bangalô Brisa" />
+            <div class="suite__media" data-idx="13">
+              <img src="images/vila-vento/suite-brise.jpg" alt="Bangalô com brise de madeira" />
             </div>
             <div class="suite__name">Bangalô Brisa</div>
-            <div class="suite__spec">2 bangalôs · até 3 hóspedes</div>
+            <div class="suite__spec">2 unidades · até 3 hóspedes · cama king e brise de madeira</div>
+            <a class="suite__cta" href="reservas.html?casa=vila-vento&amp;bangalo=brisa">Reservar este bangalô</a>
           </article>
           <article class="suite">
-            <div class="suite__media">
-              <img src="images/vila-vento/suite-king.jpg" alt="Bangalô Duna" />
+            <div class="suite__media" data-idx="8">
+              <img src="images/vila-vento/suite-branca.jpg" alt="Bangalô com closet aberto" />
             </div>
             <div class="suite__name">Bangalô Duna</div>
-            <div class="suite__spec">2 bangalôs · até 3 hóspedes</div>
+            <div class="suite__spec">2 unidades · até 3 hóspedes · closet aberto e varanda</div>
+            <a class="suite__cta" href="reservas.html?casa=vila-vento&amp;bangalo=duna">Reservar este bangalô</a>
           </article>
         </div>
       </section>
@@ -1420,7 +1434,7 @@ input { font: inherit; }
           O Vila Vento fica no <strong>Morro do Chapéu</strong>, dentro do condomínio
           <strong>Vila do Chapéu</strong>, na <strong>praia da Taíba</strong>, no município
           de São Gonçalo do Amarante. A cerca de 80 km do Aeroporto de Fortaleza, 100 metros
-          do mar e 12 minutos do centro da vila de Taíba.
+          do mar e 12 minutos do centro da Taíba.
         </p>
 
         <div class="loc__nearby">
@@ -1450,41 +1464,48 @@ input { font: inherit; }
 
       <!-- Regras -->
       <section>
-        <h2 class="content__title">Boas práticas da casa</h2>
+        <h2 class="content__title">Boas práticas do Vila Vento</h2>
         <div class="rules">
           <div class="rule">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>
             <div>
               <div class="rule__lbl">CHECK-IN</div>
-              <div class="rule__val">A partir das 15h · flexibilidade sob consulta</div>
+              <div class="rule__val">A partir das 14h</div>
             </div>
           </div>
           <div class="rule">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
             <div>
               <div class="rule__lbl">CHECK-OUT</div>
-              <div class="rule__val">Até as 14h · flexibilidade sob consulta</div>
+              <div class="rule__val">Até o meio-dia</div>
             </div>
           </div>
           <div class="rule">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.8-4.5 4-4.5"/></svg>
             <div>
               <div class="rule__lbl">CAPACIDADE</div>
-              <div class="rule__val">Até 12 hóspedes · 3 por bangalô</div>
+              <div class="rule__val">Até 3 hóspedes por bangalô, 12 no total</div>
             </div>
           </div>
           <div class="rule">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg>
             <div>
               <div class="rule__lbl">PETS</div>
-              <div class="rule__val">Bem-vindos sob consulta · avisar antes da chegada</div>
+              <div class="rule__val">Bem-vindos sob consulta, sem taxa adicional</div>
             </div>
           </div>
           <div class="rule">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12l4-4m4 4l-4-4m4 4l4-4M4 16l4-4m4 4l-4-4m4 4l4-4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9z"/><path d="M9 21v-6h6v6"/></svg>
             <div>
               <div class="rule__lbl">EVENTOS</div>
-              <div class="rule__val">Mediante aprovação prévia</div>
+              <div class="rule__val">A villa é reservada aos hóspedes da estadia</div>
+            </div>
+          </div>
+          <div class="rule">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M8 7v10M16 7v10M4 10v4M20 10v4"/></svg>
+            <div>
+              <div class="rule__lbl">SILÊNCIO</div>
+              <div class="rule__val">Das 22h às 8h</div>
             </div>
           </div>
           <div class="rule">
@@ -1504,19 +1525,19 @@ input { font: inherit; }
       <div class="booking" id="reservas">
         <div class="booking__head">
           <div class="booking__price">
-            <span class="booking__price-val">Sem disponibilidade</span>
+            <span class="booking__price-val">Reservas</span>
             <span class="booking__price-lbl">Vila Vento</span>
           </div>
         </div>
 
-        <p class="booking__note" style="text-align:left; margin:0 0 var(--s4);">A agenda do Vila Vento está fechada no momento. O concierge avisa quando as próximas datas abrirem.</p>
+        <p class="booking__note" style="text-align:left; margin:0 0 var(--s4);">A reserva é por bangalô. Diga as datas e a tipologia que prefere, e o concierge confirma a disponibilidade.</p>
 
         <!-- Quando o motor da Stays estiver no ar, este link passa a apontar para ele -->
-        <a class="booking__cta" href="https://wa.me/5585981488365?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20datas%20para%20o%20Vila%20Vento." target="_blank" style="display:flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;">
+        <a class="booking__cta" href="reservas.html?casa=vila-vento" style="display:flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;">
           Consultar próximas datas
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
-        <p class="booking__note">Atendimento pelo WhatsApp da Home &amp; Villas</p>
+        <p class="booking__note">O concierge responde em até um dia útil</p>
 
         <div class="booking__transfer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 17h14v-5H5zM3 12V7h18v5M7 17v3M17 17v3"/></svg>
@@ -1571,14 +1592,14 @@ input { font: inherit; }
       <div class="page__eyebrow">ONDE A CASA ESTÁ</div>
       <h2 class="gal-full__title">O condomínio.</h2>
     </div>
-    <a href="vila-do-chapeu.html" class="amens__link">
+    <a href="#condominio" class="amens__link">
       Conhecer o Vila do Chapéu
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M7 7h10v10"/></svg>
     </a>
   </header>
 
   <div class="similar__grid" style="grid-template-columns:repeat(auto-fit,minmax(0,560px));">
-    <a href="vila-do-chapeu.html" style="text-decoration:none;">
+    <a href="#condominio" style="text-decoration:none;">
     <article class="sim-card">
       <div class="sim-card__media"><img src="images/vila-chapeu/entrada.jpg" alt="Entrada do Vila do Chapéu" /></div>
       <div class="sim-card__loc">TAÍBA · MORRO DO CHAPÉU</div>
@@ -1607,12 +1628,11 @@ input { font: inherit; }
         <img src="images/brand/hv-horizontal-completa-azul.png" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
       </div>
       <p class="footer__brand-text">
-        Hospedagem por temporada no litoral cearense, por Monte Dourado.
-        Arquitetura, natureza e curadoria em cada villa.
+        Casas com curadoria no litoral do Ceará, por Monte Dourado.
+        Arquitetura, natureza e cuidado em cada casa.
       </p>
       <div class="footer__social">
         <a href="https://www.instagram.com/monte.dourado" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
-        <a href="https://wa.me/5585981488365" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 1 1-4.3-7.7L21 3l-1.3 4.3A9 9 0 0 1 21 12z"/><path d="M8 10c0 3 2 5 5 5l1.5-1.5-2-2-1 .5c-.5-.3-1-.8-1.3-1.3l.5-1-2-2z"/></svg></a>
       </div>
     </div>
 
@@ -1621,7 +1641,7 @@ input { font: inherit; }
       <ul>
         <li><a href="index.html#villas">Casas</a></li>
         <li><a href="destino-taiba.html">Taíba</a></li>
-        <li><a href="vila-do-chapeu.html">Vila do Chapéu</a></li>
+        <li><a href="experiencias.html">Serviços</a></li>
       </ul>
     </div>
 
@@ -1631,14 +1651,13 @@ input { font: inherit; }
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
         <li><a href="alugue-com-a-gente.html">Alugue com a gente</a></li>
-        <li><a href="contato.html">Concierge</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
       </ul>
     </div>
 
     <div class="footer__col">
       <div class="footer__col-title">Atendimento</div>
       <ul>
-        <li><a href="https://wa.me/5585981488365" target="_blank">WhatsApp</a></li>
         <li><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></li>
       </ul>
     </div>
@@ -1754,6 +1773,6 @@ input { font: inherit; }
   setTimeout(tone,300);
 })();
 </script>
-<script src="i18n.js"></script>
+<script src="i18n.js?v=20260827"></script>
 </body>
 </html>

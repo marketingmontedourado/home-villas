@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Home & Villas · by Monte Dourado</title>
-<meta name="description" content="Hospedagem por temporada na Taíba, litoral do Ceará. A Casa Zamá, no Vila do Chapéu, com gestão e concierge Home & Villas by Monte Dourado." />
+<meta name="description" content="Casas com curadoria na Taíba, litoral do Ceará. Casa Zamá e Vila Vento, com concierge dedicado da Home &amp; Villas by Monte Dourado." />
 <link rel="icon" href="images/brand/simbolo-azul.svg" />
 
 <link rel="stylesheet" href="https://use.typekit.net/gmt8jav.css">
@@ -13,6 +13,15 @@
 @font-face{font-family:'Marisa';src:url(fonts/Marisa.otf) format('opentype');font-weight:400;font-display:swap;}
 @font-face{font-family:'Marisa';src:url(fonts/Marisa-Medium.otf) format('opentype');font-weight:500 700;font-display:swap;}
 @font-face{font-family:'Cabinet Grotesk';src:url(fonts/CabinetGrotesk-Variable.woff2) format('woff2');font-weight:100 900;font-display:swap;}
+
+/* Avaliacoes de hospedes */
+.aval { padding: 120px var(--s7) 100px; max-width: 1440px; margin: 0 auto; }
+.aval__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--s5); margin-top: var(--s7); }
+.aval-card { padding: var(--s6); border-radius: var(--r-card); background: var(--sand-20); border: 1px solid var(--sand-40); }
+.aval-card__stars { color: var(--gold-100); font-size: 15px; letter-spacing: 3px; margin-bottom: var(--s3); }
+.aval-card__text { font-family: var(--body); font-weight: 300; font-size: 15px; line-height: 1.65; color: var(--navy-80); margin-bottom: var(--s4); }
+.aval-card__who { font-family: var(--title); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--navy-100); }
+.aval-card__where { font-family: var(--body); font-size: 12.5px; color: var(--navy-60); font-weight: 300; margin-top: 4px; }
 </style>
 <style>
 /* ============================================================
@@ -1494,12 +1503,11 @@ ul { list-style: none; }
 
   <ul class="nav__menu">
     <li><a href="index.html">Início</a></li>
-    <li><a href="#villas">As casas</a></li>
-    <li><a href="#destinos">Taíba</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#exp">Experiências</a></li>
+    <li><a href="casa-zama.html">As casas</a></li>
+    <li><a href="destino-taiba.html">Taíba</a></li>
+    <li><a href="experiencias.html">Serviços</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
     <li><a href="alugue-com-a-gente.html" class="nav__cta">Sua casa</a></li>
-    <li><a href="#contato">Contato</a></li>
   </ul>
 
   <div class="nav__actions">
@@ -1507,7 +1515,7 @@ ul { list-style: none; }
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
       PT
     </button>
-    <a href="contato.html" class="nav__login">
+    <a href="reservas.html" class="nav__login">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
       Reservar
     </a>
@@ -1527,13 +1535,12 @@ ul { list-style: none; }
       <a href="index.html">Início</a>
       <a href="casa-zama.html">As casas</a>
       <a href="destino-taiba.html">Taíba</a>
+      <a href="experiencias.html">Serviços</a>
       <a href="sobre.html">Sobre</a>
-      <a href="experiencias.html">Experiências</a>
-      <a href="contato.html">Contato</a>
+      <a href="alugue-com-a-gente.html">Sua casa</a>
     </div>
     <div class="mobile-menu__cta">
-      <a href="contato.html" class="btn-primary">Reservar</a>
-      <a href="https://wa.me/5585981488365" target="_blank" class="btn-secondary">WhatsApp</a>
+      <a href="reservas.html" class="btn-primary">Reservar</a>
     </div>
   </div>
 </div>
@@ -1553,12 +1560,12 @@ ul { list-style: none; }
       <em>à sua espera.</em>
     </h1>
     <p class="hero__sub reveal" style="--i:2">
-      Hospedagem por temporada na Taíba, litoral do Ceará. Arquitetura integrada à natureza,
-      concierge dedicado e a calma de quem conhece cada vento desta costa.
+      Onde o tempo desacelera e o litoral do Ceará se revela de outra forma.
+      Casas com curadoria, concierge dedicado e a calma de quem conhece cada vento desta costa.
     </p>
 
     <div class="hero__actions reveal" style="--i:3; display:flex; gap:14px; flex-wrap:wrap;">
-      <a href="casa-zama.html#reservas" class="btn-primary">Faça sua reserva</a>
+      <a href="reservas.html" class="btn-primary">Faça sua reserva</a>
     </div>
   </div>
 
@@ -1577,8 +1584,8 @@ ul { list-style: none; }
       <div class="section__eyebrow reveal">AS CASAS</div>
       <h2 class="section__title reveal">As casas da<br/><em>Home &amp; Villas.</em></h2>
       <p class="section__sub reveal">
-        Duas casas no Vila do Chapéu, condomínio da Monte Dourado na Taíba.
-        Gestão completa da estadia, concierge dedicado e o mar a poucos minutos.
+        Uma curadoria de casas onde arquitetura, paisagem e experiência se encontram,
+        a poucos minutos do mar da Taíba.
       </p>
     </div>
   </div>
@@ -1598,7 +1605,7 @@ ul { list-style: none; }
           <span>·</span>
           <span>6 hóspedes</span>
           <span>·</span>
-          <span>Reservas pelo concierge</span>
+          <span>Café da manhã incluso</span>
         </div>
         <span class="casa-card__cta">
           Conhecer a casa
@@ -1621,7 +1628,7 @@ ul { list-style: none; }
           <span>·</span>
           <span>12 hóspedes</span>
           <span>·</span>
-          <span>Sem disponibilidade no momento</span>
+          <span>Reserva por bangalô</span>
         </div>
         <span class="casa-card__cta">
           Conhecer a casa
@@ -1705,13 +1712,13 @@ ul { list-style: none; }
     </h2>
     <div class="manifesto__text reveal">
       <p>
-        A Home & Villas é a divisão de hospedagem por temporada da Monte Dourado,
-        incorporadora do litoral cearense dedicada a criar refúgios para amantes de
-        esportes e natureza.
+        A Home &amp; Villas é o braço de hospitalidade da Monte Dourado, incorporadora
+        do litoral cearense dedicada a criar refúgios para quem vive o esporte
+        e a natureza.
       </p>
       <p>
-        A operação começa pela Casa Zamá, no Vila do Chapéu, na Taíba. Curadoria
-        de arquitetura, localização e operação, para dias de aventura e de calma.
+        A operação começa na Taíba, com casas escolhidas pela arquitetura e pela
+        localização, para dias de aventura e de calma.
       </p>
     </div>
 
@@ -1724,12 +1731,12 @@ ul { list-style: none; }
       <div class="pillar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 3"/></svg>
         <div class="pillar__title">CONCIERGE</div>
-        <p class="pillar__text">Atendimento dedicado do check-in ao pôr do sol.</p>
+        <p class="pillar__text">Uma equipe dedicada a você do check-in ao check-out.</p>
       </div>
       <div class="pillar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v4M16 2v4M3 10h18M5 6h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
         <div class="pillar__title">FLEXIBILIDADE</div>
-        <p class="pillar__text">Estadias de fim de semana a temporadas estendidas.</p>
+        <p class="pillar__text">De um fim de semana a estadias longas, meio de semana incluído.</p>
       </div>
     </div>
   </div>
@@ -1745,9 +1752,13 @@ ul { list-style: none; }
         <div class="section__eyebrow reveal">EXPERIÊNCIAS</div>
         <h2 class="section__title reveal">O Ceará por dentro.</h2>
         <p class="section__sub reveal">
-          Passeios, esportes e gastronomia reservados em um só lugar,
-          com curadoria local do concierge.
+          Serviços e experiências reservados pelo concierge, do transfer no aeroporto
+          ao chef que cozinha na sua casa.
         </p>
+        <a href="experiencias.html" class="section__link reveal" style="display:inline-flex; align-items:center; gap:8px; margin-top:var(--s4); font-family:var(--title); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--gold-100);">
+          Ver serviços e experiências
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
       </div>
     </div>
 
@@ -1758,43 +1769,83 @@ ul { list-style: none; }
         </div>
         <div class="exp-card__body">
           <div class="exp-card__eyebrow">ESPORTES</div>
-          <h3 class="exp-card__name">Aulas de surf e kitesurf</h3>
-          <p class="exp-card__text">Aulas na Taíba com instrutores certificados, agendadas pelo concierge.</p>
+          <h3 class="exp-card__name">Aulas de surf, kitesurf e skate</h3>
+          <p class="exp-card__text">Instrutores locais na Taíba, com horário marcado pelo concierge.</p>
         </div>
       </div>
       <div class="exp-card reveal" style="--i:1">
         <div class="exp-card__media">
-          <img src="images/taiba/buggy-dunas.jpg" alt="Buggies nas dunas da Taíba ao entardecer" />
+          <img src="images/taiba/quadriciclo-dunas.jpg" alt="Quadriciclo cruzando as dunas da Taíba" />
         </div>
         <div class="exp-card__body">
-          <div class="exp-card__eyebrow">AVENTURA</div>
-          <h3 class="exp-card__name">Buggy e Lagoas</h3>
-          <p class="exp-card__text">Roteiro pelas dunas até lagoas de água doce, guia local incluído.</p>
+          <div class="exp-card__eyebrow">DUNAS</div>
+          <h3 class="exp-card__name">Passeio de quadriciclo</h3>
+          <p class="exp-card__text">Roteiro pelas dunas e lagoas de água doce, com guia local.</p>
         </div>
       </div>
       <div class="exp-card reveal" style="--i:2">
         <div class="exp-card__media">
-          <img src="images/casa-zama/cafe-manha.jpg" alt="Café da manhã na Casa Zamá" />
+          <img src="images/casa-zama/area-gourmet-mesa.jpg" alt="Mesa posta na área gourmet da Casa Zamá" />
         </div>
         <div class="exp-card__body">
           <div class="exp-card__eyebrow">GASTRONOMIA</div>
-          <h3 class="exp-card__name">Chef Particular</h3>
-          <p class="exp-card__text">Jantares na villa com chefs cearenses e ingredientes do mar.</p>
+          <h3 class="exp-card__name">Chef para almoço ou jantar</h3>
+          <p class="exp-card__text">Jantares e assados de peixe preparados na casa, com ingredientes do mar.</p>
         </div>
       </div>
       <div class="exp-card reveal" style="--i:3">
         <div class="exp-card__media">
-          <img src="images/taiba/quadriciclo-dunas.jpg" alt="Quadriciclo cruzando as dunas" />
+          <img src="images/casa-zama/jardim-rede.jpg" alt="Rede e mesa no jardim da Casa Zamá" />
         </div>
         <div class="exp-card__body">
-          <div class="exp-card__eyebrow">DUNAS</div>
-          <h3 class="exp-card__name">Quadriciclo</h3>
-          <p class="exp-card__text">Passeios pelos areais e dunas da Taíba, organizados pelo concierge.</p>
+          <div class="exp-card__eyebrow">BEM-ESTAR</div>
+          <h3 class="exp-card__name">Yoga e massagem em casa</h3>
+          <p class="exp-card__text">Aula de yoga no jardim e massagem na própria casa, no seu horário.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- ============================================================
+     AVALIACOES DOS HOSPEDES
+     Pendente: colar aqui as avaliacoes reais exportadas do Booking / Stays
+     (nota, comentario curto, primeiro nome do hospede, mes e ano, canal).
+     Enquanto nao houver avaliacao real, a secao fica comentada.
+     Para publicar: apagar as marcas de comentario abaixo e trocar os textos.
+     ============================================================ -->
+<!--
+<section class="aval" id="avaliacoes">
+  <div class="section__head">
+    <div class="section__head-l">
+      <div class="section__eyebrow reveal">QUEM JA FICOU</div>
+      <h2 class="section__title reveal">O que dizem<br/><em>as casas.</em></h2>
+      <p class="section__sub reveal">Avaliacoes deixadas por hospedes ao fim da estadia.</p>
+    </div>
+  </div>
+  <div class="aval__grid">
+    <div class="aval-card reveal">
+      <div class="aval-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="aval-card__text">[comentario do hospede]</p>
+      <div class="aval-card__who">[Primeiro nome]</div>
+      <div class="aval-card__where">Casa Zama &middot; [mes/ano] &middot; [canal]</div>
+    </div>
+    <div class="aval-card reveal">
+      <div class="aval-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="aval-card__text">[comentario do hospede]</p>
+      <div class="aval-card__who">[Primeiro nome]</div>
+      <div class="aval-card__where">Casa Zama &middot; [mes/ano] &middot; [canal]</div>
+    </div>
+    <div class="aval-card reveal">
+      <div class="aval-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="aval-card__text">[comentario do hospede]</p>
+      <div class="aval-card__who">[Primeiro nome]</div>
+      <div class="aval-card__where">Vila Vento &middot; [mes/ano] &middot; [canal]</div>
+    </div>
+  </div>
+</section>
+-->
 
 <!-- ============================================================
      CTA
@@ -1814,15 +1865,15 @@ ul { list-style: none; }
   <div class="cta__inner">
     <div class="cta__eyebrow">RESERVAS</div>
     <h2 class="cta__title">
-      Reserve<br/><em>a sua temporada.</em>
+      Reserve<br/><em>a sua estadia.</em>
     </h2>
     <p class="cta__text">
-      Datas, valores e disponibilidade da Casa Zamá, direto com o concierge.
+      Datas, disponibilidade e valores das casas da Taíba, direto com o concierge.
     </p>
     <!-- Quando o motor da Stays estiver no ar, o botão Reservar passa a apontar para ele -->
     <div class="cta__actions" style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-      <a class="cta__btn" style="text-decoration:none; display:inline-flex; align-items:center;" href="https://wa.me/5585981488365?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20a%20Casa%20Zam%C3%A1." target="_blank" rel="noopener">Reservar</a>
-      <a class="cta__btn" style="text-decoration:none; display:inline-flex; align-items:center; background:transparent; border:1px solid rgba(225,204,174,.55); color:var(--sand-100);" href="casa-zama.html">Conhecer a casa</a>
+      <a class="cta__btn" style="text-decoration:none; display:inline-flex; align-items:center;" href="reservas.html">Reservar</a>
+      <a class="cta__btn" style="text-decoration:none; display:inline-flex; align-items:center; background:transparent; border:1px solid rgba(225,204,174,.55); color:var(--sand-100);" href="casa-zama.html">Conhecer as casas</a>
     </div>
   </div>
 </section>
@@ -1837,12 +1888,11 @@ ul { list-style: none; }
         <img src="images/brand/hv-horizontal-completa-azul.png" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
       </div>
       <p class="footer__brand-text">
-        Hospedagem por temporada no litoral cearense, por Monte Dourado.
-        Arquitetura, natureza e curadoria em cada villa.
+        Casas com curadoria no litoral do Ceará, por Monte Dourado.
+        Arquitetura, natureza e cuidado em cada casa.
       </p>
       <div class="footer__social">
         <a href="https://www.instagram.com/monte.dourado" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
-        <a href="https://wa.me/5585981488365" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 1 1-4.3-7.7L21 3l-1.3 4.3A9 9 0 0 1 21 12z"/><path d="M8 10c0 3 2 5 5 5l1.5-1.5-2-2-1 .5c-.5-.3-1-.8-1.3-1.3l.5-1-2-2z"/></svg></a>
       </div>
     </div>
 
@@ -1851,7 +1901,7 @@ ul { list-style: none; }
       <ul>
         <li><a href="index.html#villas">Casas</a></li>
         <li><a href="destino-taiba.html">Taíba</a></li>
-        <li><a href="vila-do-chapeu.html">Vila do Chapéu</a></li>
+        <li><a href="experiencias.html">Serviços</a></li>
       </ul>
     </div>
 
@@ -1861,14 +1911,13 @@ ul { list-style: none; }
         <li><a href="sobre.html">Sobre a marca</a></li>
         <li><a href="experiencias.html">Experiências</a></li>
         <li><a href="alugue-com-a-gente.html">Alugue com a gente</a></li>
-        <li><a href="contato.html">Concierge</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
       </ul>
     </div>
 
     <div class="footer__col">
       <div class="footer__col-title">Atendimento</div>
       <ul>
-        <li><a href="https://wa.me/5585981488365" target="_blank">WhatsApp</a></li>
         <li><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></li>
       </ul>
     </div>
@@ -1950,6 +1999,6 @@ ul { list-style: none; }
   setTimeout(tone,300);
 })();
 </script>
-<script src="i18n.js"></script>
+<script src="i18n.js?v=20260827"></script>
 </body>
 </html>

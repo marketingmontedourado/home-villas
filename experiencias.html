@@ -3,16 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Experiências · Home & Villas</title>
-<meta name="description" content="Kitesurf, surf, pôr do sol, gastronomia — descubra as experiências curadas do litoral cearense." />
+<title>Serviços e experiências · Home &amp; Villas</title>
+<meta name="description" content="Serviços e experiências da Home &amp; Villas na Taíba: transfer, compras de mercado, equipe de casa, aulas de surf e kitesurf, chef, massagem e passeio de quadriciclo, tudo pelo concierge." />
 <link rel="icon" href="images/brand/simbolo-azul.svg" />
 <link rel="stylesheet" href="https://use.typekit.net/gmt8jav.css">
-<style>
-@font-face{font-family:'Boska';src:url(fonts/Boska-Light.otf) format('opentype');font-weight:300;font-display:swap;}
-@font-face{font-family:'Marisa';src:url(fonts/Marisa.otf) format('opentype');font-weight:400;font-display:swap;}
-@font-face{font-family:'Marisa';src:url(fonts/Marisa-Medium.otf) format('opentype');font-weight:500 700;font-display:swap;}
-@font-face{font-family:'Cabinet Grotesk';src:url(fonts/CabinetGrotesk-Variable.woff2) format('woff2');font-weight:100 900;font-display:swap;}
-</style>
 <style>
 :root {
   --navy-100: #2A3E5B; --navy-80: #556577; --navy-60: #7F8C9B;
@@ -318,6 +312,23 @@ ul { list-style: none; }
 .hero__title, .page-hero__title, .section__title, .destinos__title, .manifesto__title, .cta__title, .page-title, .gal-full__title { font-family: 'alga', 'Boska', serif; font-weight: 400; }
 .hero__title em, .page-hero__title em, .section__title em, .destinos__title em, .manifesto__title em, .cta__title em, .page-title em, .gal-full__title em { color: inherit; }
 
+
+/* Servicos e experiencias */
+.svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s5); margin-top: var(--s7); }
+@media (max-width: 900px) { .svc-grid { grid-template-columns: 1fr; } }
+.svc { display: flex; gap: var(--s4); padding: var(--s5); background: var(--off-white); border: 1px solid var(--sand-40); border-radius: var(--r-card); }
+.page-section--sand .svc { background: var(--off-white); }
+.svc__ico { flex: 0 0 34px; width: 34px; height: 34px; color: var(--gold-100); }
+.svc__ico svg { width: 100%; height: 100%; }
+.svc__name { font-family: var(--title); font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--navy-100); margin-bottom: 6px; line-height: 1.15; }
+.svc__text { font-family: var(--body); font-weight: 300; font-size: 14.5px; line-height: 1.6; color: var(--navy-80); }
+.svc__tag { display: inline-block; margin-top: 10px; font-family: var(--title); font-size: 9.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-100); border: 1px solid var(--gold-40); border-radius: var(--r-pill); padding: 4px 10px; }
+.tempo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s5); margin-top: var(--s7); }
+@media (max-width: 900px) { .tempo-grid { grid-template-columns: 1fr; } }
+.tempo { padding: var(--s6); border-radius: var(--r-card); background: var(--sand-20); }
+.tempo__lbl { font-family: var(--title); font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-100); margin-bottom: var(--s3); }
+.tempo__title { font-family: var(--title); font-size: 20px; text-transform: uppercase; letter-spacing: .04em; color: var(--navy-100); margin-bottom: var(--s3); line-height: 1.1; }
+.tempo__text { font-family: var(--body); font-weight: 300; font-size: 14.5px; line-height: 1.65; color: var(--navy-80); }
 </style>
 </head>
 <body>
@@ -331,17 +342,16 @@ ul { list-style: none; }
     <li><a href="index.html">Início</a></li>
     <li><a href="casa-zama.html">As casas</a></li>
     <li><a href="destino-taiba.html">Taíba</a></li>
+    <li><a href="experiencias.html">Serviços</a></li>
     <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="experiencias.html">Experiências</a></li>
     <li><a href="alugue-com-a-gente.html" class="nav__cta">Sua casa</a></li>
-    <li><a href="contato.html">Contato</a></li>
   </ul>
   <div class="nav__actions">
     <button class="nav__lang" aria-label="Idioma">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg>
       PT
     </button>
-    <a href="contato.html" class="nav__login">
+    <a href="reservas.html" class="nav__login">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
       Reservar
     </a>
@@ -351,80 +361,164 @@ ul { list-style: none; }
 
 <header class="page-hero">
   <div class="page-hero__bg">
-    <img src="images/taiba/pescador-jangada-lg.jpg" alt="Pescador na Taíba" />
+    <img src="images/casa-zama/area-gourmet-mesa-lg.jpg" alt="Mesa posta na área gourmet, com a piscina ao fundo" />
   </div>
   <div class="page-hero__inner">
-    <div class="page-hero__eyebrow">EXPERIÊNCIAS</div>
-    <h1 class="page-hero__title reveal">Viva a<br/><em>Taíba.</em></h1>
+    <div class="page-hero__eyebrow">CONCIERGE</div>
+    <h1 class="page-hero__title reveal">Serviços e<br/><em>experiências.</em></h1>
   </div>
 </header>
 
 <section class="page-section">
   <div class="page-grid">
     <div>
-      <div class="page-eyebrow">O QUE FAZER</div>
-      <h2 class="page-title reveal">Cada dia,<br/><em>uma aventura.</em></h2>
+      <div class="page-eyebrow">COMO FUNCIONA</div>
+      <h2 class="page-title reveal">Tudo pelo<br/><em>concierge.</em></h2>
     </div>
     <div>
       <div class="page-body">
-        <p>A Taíba é um dos cenários mais completos do litoral cearense. Ventos constantes para o kitesurf, ondas perfeitas para o surf, lagoas para iniciantes, dunas para o pôr do sol e uma gastronomia que mistura o frescor do mar com a simplicidade cearense.</p>
-        <p>Como hóspede Home & Villas, você tem acesso a experiências curadas: desde aulas de kite com instrutores locais até jantares privativos à beira-mar. Nosso concierge conhece cada canto desta costa.</p>
+        <p>Depois que a reserva é confirmada, o nosso concierge entra em contato com você. É com ele que tudo se organiza: o carro que espera no aeroporto, a dispensa cheia quando você abre a porta, o chef do jantar de sábado, a aula de kite na hora do vento certo.</p>
+        <p>Os serviços e as experiências abaixo têm valor à parte da diária, com parceiros da Taíba escolhidos por nós. Alguns pedem aviso antes da viagem, outros você decide no próprio dia.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section class="page-section page-section--sand">
-  <div class="page-eyebrow">DESCUBRA</div>
-  <h2 class="page-title reveal">Experiências<br/><em>curadas.</em></h2>
-  <div class="exp-grid">
-    <div class="exp-card reveal">
-      <img src="images/taiba/dunas-eolicas-lg.jpg" alt="Kitesurf na Taíba" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">ESPORTES</div>
-        <h3 class="exp-card__name">Kitesurf</h3>
-        <p class="exp-card__desc">A lagoa dos três níveis: iniciantes, intermediários e profissionais. Palco internacional de freestyle e big air.</p>
+  <div class="page-eyebrow">SERVIÇOS</div>
+  <h2 class="page-title reveal">A casa pronta<br/><em>do seu jeito.</em></h2>
+  <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 17h20M5 17V9l3-4h8l3 4v8M7 21v-4M17 21v-4"/><circle cx="8" cy="13" r="1"/><circle cx="16" cy="13" r="1"/></svg></div>
+        <div>
+          <div class="svc__name">Transfer do aeroporto</div>
+          <p class="svc__text">Buscamos você em Fortaleza e levamos de volta. Combinamos antes o número de pessoas, os horários de chegada e de partida e a cadeirinha de bebê, quando precisar.</p>
+        </div>
       </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 13l2-6h14l2 6v5h-3M6 18H3v-5M3 13h18"/><circle cx="7.5" cy="18" r="2"/><circle cx="16.5" cy="18" r="2"/></svg></div>
+        <div>
+          <div class="svc__name">Carro, quadriciclo ou buggy</div>
+          <p class="svc__text">Veículo à sua disposição para o dia a dia na Taíba, entregue na porta da casa.</p>
+          <span class="svc__tag">Locação</span>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 7h12l-1 13H7L6 7zM9 7V5a3 3 0 0 1 6 0v2"/></svg></div>
+        <div>
+          <div class="svc__name">Compras de mercado</div>
+          <p class="svc__text">Você manda a lista, a gente compra e guarda tudo antes da sua chegada. O valor é adiantado e a prestação de contas vem com as notas.</p>
+          <span class="svc__tag">Valor adiantado</span>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9z"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div>
+          <div class="svc__name">Equipe de casa</div>
+          <p class="svc__text">Uma pessoa da equipe cuida do café da manhã e do almoço durante a sua estadia.</p>
+          <span class="svc__tag">Diária</span>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 3l7 7-9 9H5v-7l9-9zM12 5l7 7"/></svg></div>
+        <div>
+          <div class="svc__name">Limpeza extra</div>
+          <p class="svc__text">Limpeza adicional em qualquer dia da hospedagem, no horário que combinar melhor com você.</p>
+          <span class="svc__tag">Diária</span>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 18v-6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6M3 15h18M6 9V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M4 18v2M20 18v2"/></svg></div>
+        <div>
+          <div class="svc__name">Troca de enxoval</div>
+          <p class="svc__text">Roupa de cama e banho renovada antes do calendário previsto.</p>
+          <span class="svc__tag">Taxa extra</span>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="page-eyebrow">EXPERIÊNCIAS</div>
+  <h2 class="page-title reveal">O Ceará<br/><em>por dentro.</em></h2>
+  <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20c6-1 14-9 15-17C11 4 5 12 4 20z"/><path d="M2 21c2 0 3-1 5-1s3 1 5 1 3-1 5-1 3 1 5 1"/></svg></div>
+        <div>
+          <div class="svc__name">Aula de surf</div>
+          <p class="svc__text">A onda do Morro do Chapéu é uma das melhores do Ceará, boa para quem começa e para quem já surfa. Aula com instrutor da Taíba.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 3 9l9 6 9-6-9-7zM12 15v7M12 22l-4-3M12 22l4-3"/></svg></div>
+        <div>
+          <div class="svc__name">Aula de kitesurf</div>
+          <p class="svc__text">Vento constante o ano inteiro e uma lagoa que recebe bem quem está aprendendo. Equipamento e instrutor local.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 10h18l-2 4H5l-2-4z"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg></div>
+        <div>
+          <div class="svc__name">Aula de skate</div>
+          <p class="svc__text">Na pista do Vila do Chapéu, a poucos passos da casa. Para crianças e adultos.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M8 17h8M6 14l3-6h6l2 4"/></svg></div>
+        <div>
+          <div class="svc__name">Passeio de quadriciclo</div>
+          <p class="svc__text">Roteiro pelas dunas e pelas lagoas de água doce. Você escolhe o horário e a duração.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 21h10M6 10a3 3 0 1 1 3-4 3.5 3.5 0 0 1 6 0 3 3 0 1 1 3 4v6H6v-6z"/></svg></div>
+        <div>
+          <div class="svc__name">Chef para almoço ou jantar</div>
+          <p class="svc__text">Um chef cozinha na sua casa, com o menu combinado antes. Almoço ou jantar, na sua mesa.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12c3-5 8-6 12-4 2 1 4 3 6 4-2 1-4 3-6 4-4 2-9 1-12-4z"/><circle cx="16" cy="11" r="0.8"/><path d="M3 12 6 9M3 12l3 3"/></svg></div>
+        <div>
+          <div class="svc__name">Assado de peixe</div>
+          <p class="svc__text">O peixe do dia assado na casa, do jeito da Taíba, com a mesa posta na área gourmet.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="4.5" r="2"/><path d="M12 6.5v6M12 12.5 6 17M12 12.5 18 17M7 12h10"/></svg></div>
+        <div>
+          <div class="svc__name">Aula de yoga</div>
+          <p class="svc__text">Prática no jardim ou à beira da piscina, no começo ou no fim do dia.</p>
+        </div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16c2-5 6-8 8-8s6 3 8 8"/><path d="M3 20h18"/><circle cx="12" cy="6" r="2"/></svg></div>
+        <div>
+          <div class="svc__name">Massagem em casa</div>
+          <p class="svc__text">Massagista profissional na sua casa, no horário que você marcar.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="page-section page-section--sand">
+  <div class="page-eyebrow">QUANDO PEDIR</div>
+  <h2 class="page-title reveal">Três tempos<br/><em>da estadia.</em></h2>
+  <div class="tempo-grid">
+    <div class="tempo reveal">
+      <div class="tempo__lbl">ANTES DA VIAGEM</div>
+      <div class="tempo__title">Com<br/>antecedência</div>
+      <p class="tempo__text">Transfer do aeroporto, cadeirinha de bebê, carro, quadriciclo ou buggy e as compras de mercado que você quer encontrar na dispensa.</p>
     </div>
-    <div class="exp-card reveal">
-      <img src="images/taiba/aereo-eolicas-lg.jpg" alt="Surf no Morro do Chapéu" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">ESPORTES</div>
-        <h3 class="exp-card__name">Surf</h3>
-        <p class="exp-card__desc">A onda do Morro do Chapéu é uma das melhores do Ceará. Perfeita para todos os níveis.</p>
-      </div>
+    <div class="tempo reveal">
+      <div class="tempo__lbl">ATÉ 48 HORAS ANTES</div>
+      <div class="tempo__title">Com<br/>agenda</div>
+      <p class="tempo__text">Chef para almoço ou jantar, assado de peixe, equipe de casa para o café da manhã, aulas de surf, kitesurf e skate e o passeio de quadriciclo.</p>
     </div>
-    <div class="exp-card reveal">
-      <img src="images/taiba/sunset-eolicas-lg.jpg" alt="Pôr do sol nas dunas" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">CONTEMPLAÇÃO</div>
-        <h3 class="exp-card__name">Pôr do sol nas dunas</h3>
-        <p class="exp-card__desc">Eólicas, lagoas e coqueiros emolduram o pôr do sol mais cinematográfico do litoral cearense.</p>
-      </div>
-    </div>
-    <div class="exp-card reveal">
-      <img src="images/taiba/pescador-jangada-lg.jpg" alt="Gastronomia local" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">GASTRONOMIA</div>
-        <h3 class="exp-card__name">A Pesqueira</h3>
-        <p class="exp-card__desc">Assado de peixe fresco, luau na praia e a simplicidade da culinária cearense direto do mar.</p>
-      </div>
-    </div>
-    <div class="exp-card reveal">
-      <img src="images/taiba/textura-areia-lg.jpg" alt="Trilhas nas dunas" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">NATUREZA</div>
-        <h3 class="exp-card__name">Trilhas & Grutas</h3>
-        <p class="exp-card__desc">Grutas da Taibinha, piscinas naturais e trilhas entre dunas douradas com vista para o mar.</p>
-      </div>
-    </div>
-    <div class="exp-card reveal">
-      <img src="images/taiba/hero-taiba.jpg" alt="Passeio de buggy" />
-      <div class="exp-card__body">
-        <div class="exp-card__tag">AVENTURA</div>
-        <h3 class="exp-card__name">Passeios de buggy</h3>
-        <p class="exp-card__desc">Dunas, lagoas e praias desertas. Um passeio inesquecível pela costa cearense.</p>
-      </div>
+    <div class="tempo reveal">
+      <div class="tempo__lbl">DURANTE A ESTADIA</div>
+      <div class="tempo__title">No<br/>mesmo dia</div>
+      <p class="tempo__text">Limpeza extra, troca de enxoval, aula de yoga e massagem em casa, com o concierge à sua disposição a qualquer momento.</p>
     </div>
   </div>
 </section>
@@ -434,10 +528,9 @@ ul { list-style: none; }
   <div class="footer__inner">
     <div class="footer__brand">
       <img src="images/brand/hv-horizontal-completa-azul.png" alt="Home & Villas by Monte Dourado" class="footer__logo-img">
-      <p class="footer__desc">Hospedagem por temporada no litoral cearense, por Monte Dourado. Arquitetura, natureza e curadoria em cada villa.</p>
+      <p class="footer__desc">Casas com curadoria no litoral do Ceará, por Monte Dourado. Arquitetura, natureza e cuidado em cada casa.</p>
       <div class="footer__social">
         <a href="https://www.instagram.com/monte.dourado" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
-        <a href="https://wa.me/5585981488365" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
       </div>
     </div>
     <div class="footer__col">
@@ -453,7 +546,7 @@ ul { list-style: none; }
     <div class="footer__col">
       <h4 class="footer__col-title">SUPORTE</h4>
       <ul>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
         <li><a href="#">Política de privacidade</a></li>
         <li><a href="#">Termos de uso</a></li>
         <li><a href="mailto:contato@mdhomevillas.com">contato@mdhomevillas.com</a></li>
@@ -515,6 +608,6 @@ if(hamburger){
   setTimeout(tone,300);
 })();
 </script>
-<script src="i18n.js"></script>
+<script src="i18n.js?v=20260827"></script>
 </body>
 </html>
