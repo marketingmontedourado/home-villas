@@ -2,6 +2,7 @@
   var LANGS=['pt','en','es','fr'];
   var LABELS={pt:'PT',en:'EN',es:'ES',fr:'FR'};
   var T={
+    'Prática no jardim ou à beira da piscina, com horário sob consulta.':{en:'Practice in the garden or by the pool, with times on request.',es:'Práctica en el jardín o al borde de la piscina, con horario bajo consulta.',fr:'Une séance au jardin ou au bord de la piscine, aux horaires sur demande.'},
     // ---- feedback Mari e Ingrid, 28/08/2026 ----
     'Uma pessoa da equipe cuida do café da manhã durante a sua estadia. O almoço se combina à parte, com o concierge.':{en:'A member of the team takes care of breakfast during your stay. Lunch is arranged separately with the concierge.',es:'Una persona del equipo se encarga del desayuno durante su estadía. El almuerzo se acuerda aparte, con el concierge.',fr:'Une personne de l\'équipe s\'occupe du petit-déjeuner pendant votre séjour. Le déjeuner s\'organise à part, avec le concierge.'},
     'Limpeza adicional durante a hospedagem.':{en:'Additional cleaning during the stay.',es:'Limpieza adicional durante la estadía.',fr:'Ménage supplémentaire pendant le séjour.'},
