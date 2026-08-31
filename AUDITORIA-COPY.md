@@ -52,3 +52,7 @@ Filosofia registrada da marca desde 1979: cada propriedade nasce da geografia, d
 | As casas · lead novo | (não existia) | "Duas casas na Taíba, cada uma com a própria assinatura. Diga as datas e a casa fica pronta para você." |
 
 Preservadas por decisão coletiva da reunião de 25/08: o hero "Um refúgio à sua espera" com "Onde o tempo desacelera..." (frase da Ingrid, já no registro certo), o bloco do concierge ("o carro que espera no aeroporto, a dispensa cheia quando você abre a porta...") e os textos factuais de regras, amenidades e formulários. Todas as frases novas foram traduzidas para EN, ES e FR no mesmo registro.
+
+## Rodada 2 e 3 (28/08/2026) · site inteiro
+
+A pedido da Vitória ("mais rebuscado e mais sofisticado, de todo o site"), sob a régua da Ingrid ("sofisticado e menos generalizado"), o registro subiu em todas as páginas: hero, manifesto, pilares, CTA, os 14 serviços e experiências, cards das casas, destino, Sobre e Alugue com a gente. Entradas de vocabulário: alísio, travessia, coleção breve, o chef que assina o menu, a casa que amanhece pronta, o relógio que cede a vez à maré, dunas que caminham com o vento. Intocados: os fatos operacionais fechados pela Mari (limpeza, almoço à parte, horários sob consulta), o hero "Um refúgio à sua espera" e o parágrafo do concierge. Tudo traduzido para EN, ES e FR no mesmo registro.
