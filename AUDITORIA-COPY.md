@@ -41,6 +41,8 @@ Com critério, quase nunca: único, exclusivo, charmoso, perfeito, luxo (só no 
 
 Palavras e ideias dela, para usar como âncora: **curadoria de casas** · **um refúgio à sua espera** · **onde o tempo desacelera** · concierge como **suporte personalizado durante toda a estadia** (nunca "do chef ao aluguel") · Sobre nós conceitual: "está na praia, valoriza a mão de obra local" · experiências pensáveis como curadorias (passeios, gastronômica). Régua geral: "sofisticado e menos generalizado".
 
+**Aplicação dos exemplos dela (01/09/2026), lidas as 183 falas da transcrição:** hero da home fechado na frase dela ("Onde o tempo desacelera e revela uma nova forma de ver o litoral do Ceará"); a seção As casas voltou à formulação que ela ditou na reunião ("Uma curadoria de casas, onde arquitetura, paisagem e experiência se encontram, com o mar a poucos minutos"); a página de experiências ganhou os grupos do book de referência dela (Curadoria de esporte e passeios · Curadoria gastronômica · Curadoria de bem-estar); e o intro do concierge ganhou "Um atendimento pessoal, presente durante toda a estadia". Já atendidos antes: equipe local no Sobre, café da manhã incluso no alto da página da Zamá, concierge "do check-in ao check-out".
+
 ## Curadoria internacional (27/08/2026) · a estrutura
 
 ### As cinco referências e o que cada uma ensina
