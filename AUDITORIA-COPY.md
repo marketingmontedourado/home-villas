@@ -1,8 +1,49 @@
 # Auditoria de copy · luxo e wellness
 
-Curadoria feita em 27/08/2026 sobre as cinco marcas de hospitalidade com a copy mais respeitada do mundo, para calibrar a voz do site da Home & Villas. Frases citadas foram coletadas dos sites e materiais oficiais das marcas na mesma data.
+Curadoria em duas partes: a principal, em português (01/09/2026), sobre as cinco casas brasileiras com a copy mais respeitada da hospitalidade de luxo; e a internacional (27/08/2026), que calibrou a estrutura. Frases citadas foram coletadas dos sites oficiais nas mesmas datas.
 
-## As cinco referências e o que cada uma ensina
+## Curadoria em português (01/09/2026) · a principal
+
+O site é escrito primeiro em português, então a régua tem que ser o que soa sofisticado em português, não tradução de inglês. As cinco referências brasileiras:
+
+### 1. Fasano Trancoso · o verbo preciso é o que refina
+"A maré baixa **descortina** a beleza das piscinas naturais." · "O Hotel Fasano Trancoso **aportou** na Praia de Itapororoca." · "remos de madeira, cerâmica artesanal e garrafões de vidro **garimpados**". O refinamento não vem de adjetivo, vem de verbo exato e elegante do português: descortinar, aportar, garimpar. E de enumeração nominal concreta: "Céu azul, águas quentes e quase sempre calmas."
+
+**Lição:** trocar adjetivo genérico por verbo preciso. É o padrão mais aplicável ao nosso site.
+
+### 2. UXUA Casa Hotel (Trancoso) · autenticidade é o luxo
+"Autenticidade é o maior luxo." · "Estas casas têm alma... cada detalhe moldado por mãos habilidosas." · Restauração "em parceria com artesãos locais, com técnicas tradicionais". O valor vem da verdade do lugar e do trabalho local, nunca de amenidade.
+
+**Lição:** valorizar o local e a mão de obra local (exatamente o que a Ingrid pediu para o Sobre nós).
+
+### 3. Txai Itacaré · o anfitrião que domina uma arte
+"O Txai domina a arte baiana de bem-receber e **aquietar corações apressados**." Verbo forte e promessa emocional em uma linha. Mas o Txai também escorrega: "a morada no paraíso", "vista deslumbrante". Prova de que até os grandes caem no clichê; a nossa lista negra é o corte que nos separa.
+
+**Lição:** o serviço como arte do anfitrião; e o alerta do que evitar.
+
+### 4. Botanique (Mantiqueira) · a prova concreta
+"Plantamos, colhemos e criamos pratos com ingredientes locais." · "Água exclusiva proveniente das próprias minas." O luxo demonstrado por fato verificável, não por promessa. (No texto institucional, porém, acumula "aconchegante, exclusivo, encantador": mais material para a lista negra.)
+
+**Lição:** cada frase de valor precisa carregar um fato (nossa regra dos dados reais).
+
+### 5. Rosewood São Paulo · o contraexemplo
+A versão PT do site é tradução do inglês e se sente: "as suítes decoradas com bom gosto estão entre as mais refinadas da cidade", "um refúgio emocionante". Sintaxe de inglês vestida de português.
+
+**Lição:** nunca escrever PT que pareça vertido. A frase nasce em português.
+
+## Lista negra de clichês (PT)
+
+Vetadas em qualquer texto do site: **temporada** (veto da Ingrid: "meio batido"), paraíso, paradisíaco, deslumbrante, encantador, aconchegante, inesquecível, inolvidável, incrível, maravilhoso, imperdível, espetacular, surpreendente, "momentos especiais", "as melhores ondas/praias" (superlativo genérico), desfrute, "venha viver", "sinta-se em casa", "tudo o que você precisa", "conforto e sofisticação" (dizer "sofisticado" em vez de demonstrar).
+
+Com critério, quase nunca: único, exclusivo, charmoso, perfeito, luxo (só no manifesto, "o verdadeiro luxo é o tempo bem vivido").
+
+## O vocabulário da Ingrid (reunião 25/08 + WhatsApp)
+
+Palavras e ideias dela, para usar como âncora: **curadoria de casas** · **um refúgio à sua espera** · **onde o tempo desacelera** · concierge como **suporte personalizado durante toda a estadia** (nunca "do chef ao aluguel") · Sobre nós conceitual: "está na praia, valoriza a mão de obra local" · experiências pensáveis como curadorias (passeios, gastronômica). Régua geral: "sofisticado e menos generalizado".
+
+## Curadoria internacional (27/08/2026) · a estrutura
+
+### As cinco referências e o que cada uma ensina
 
 ### 1. Aman · o lugar age, o hóspede recebe
 Frases como "Set amid wild nature, Amanvari emerges where the distinct desert, mountain and ocean landscapes converge" e "soul-soothing escapes by the coast". A paisagem é o sujeito da frase; o hóspede aparece como quem recebe. Declarativas curtas, zero exclamação, zero oferta. A promessa central é paz e privacidade ("privacy, peace and genuine hospitality").
@@ -55,4 +96,8 @@ Preservadas por decisão coletiva da reunião de 25/08: o hero "Um refúgio à s
 
 ## Rodada 2 e 3 (28/08/2026) · site inteiro
 
-A pedido da Vitória ("mais rebuscado e mais sofisticado, de todo o site"), sob a régua da Ingrid ("sofisticado e menos generalizado"), o registro subiu em todas as páginas: hero, manifesto, pilares, CTA, os 14 serviços e experiências, cards das casas, destino, Sobre e Alugue com a gente. Entradas de vocabulário: alísio, travessia, coleção breve, o chef que assina o menu, a casa que amanhece pronta, o relógio que cede a vez à maré, dunas que caminham com o vento. Intocados: os fatos operacionais fechados pela Mari (limpeza, almoço à parte, horários sob consulta), o hero "Um refúgio à sua espera" e o parágrafo do concierge. Tudo traduzido para EN, ES e FR no mesmo registro.
+A pedido da Vitória ("mais rebuscado e mais sofisticado, de todo o site"), sob a régua da Ingrid ("sofisticado e menos generalizado"), o registro subiu em todas as páginas: hero, manifesto, pilares, CTA, os 14 serviços e experiências, cards das casas, destino, Sobre e Alugue com a gente. Entradas de vocabulário: alísio, travessia, coleção reservada (era "breve", ajustada em 01/09), o chef que assina o menu, a casa que amanhece pronta, o relógio que cede a vez à maré, dunas que caminham com o vento. Intocados: os fatos operacionais fechados pela Mari (limpeza, almoço à parte, horários sob consulta), o hero "Um refúgio à sua espera" e o parágrafo do concierge. Tudo traduzido para EN, ES e FR no mesmo registro.
+
+## Varredura de clichês (01/09/2026)
+
+Com a lista negra pronta, as 8 páginas foram varridas por script contra ~50 termos. Sobreviventes encontrados e corrigidos: "GESTÃO DE TEMPORADA" (Alugue com a gente) virou "GESTÃO DE HOSPEDAGEM"; e no destino, "acesso direto às melhores ondas e pôr do sol inesquecível" virou "uma elevação natural que descortina o mar, com o pico de surf logo abaixo e o sol se pondo atrás das eólicas" (verbo do Fasano em ação). O restante do site passou limpo.
